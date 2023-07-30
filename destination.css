@@ -48,6 +48,7 @@ body {
 .header {
     padding-block: .5rem;
     text-transform: uppercase;
+    margin-bottom: 0%;
 }
 
 .header__nav {
@@ -94,8 +95,11 @@ body {
 }
 
 main {
-    padding: 2rem;
-    background-color: yellow;
+    /* padding: 2rem; */
+    background-color: #FFFEFE;
+    position: absolute;
+    right: 0;
+    left: 0;
 }
 
 /* Footer */
@@ -194,4 +198,27 @@ footer {
 
 .copyright {
     font-size: .875rem;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+}
+
+.banner-img {
+    margin-top: 0%;
+    width: 100%;
+}
+
+.banner-text {
+    font-family: Miller;
+    font-size: 64px;
+    font-weight: 600;
+    text-align: center;
+    color: #F9F9F9;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 0%;
+    right: 0%;
 }
