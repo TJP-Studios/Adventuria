@@ -222,3 +222,19 @@ footer {
     left: 0%;
     right: 0%;
 }
+
+.banner-arrow {
+    max-width: 16px;
+    width: 100%;
+    position: absolute;
+    bottom: 2%;
+    left: 48%;
+}
+
+.banner-mouse {
+    max-width: 12.86px;
+    width: 100%;
+    position: absolute;
+    bottom: 2.5%;
+    right: 48%;
+}
