@@ -1,5 +1,21 @@
 @import url(./font.css);
 
+:root {
+  --fs-xlarge: 4rem;
+  --fs-large: 2.5rem;
+  --fs-normal: 1.125rem;
+  --fs-small: 1rem;
+}
+
+@media (max-width: 50em) {
+  :root {
+    --fs-xlarge: 2.5rem;
+    --fs-large: 2rem;
+    --fs-normal: 1rem;
+    --fs-small: .875rem;
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -30,9 +46,19 @@ button {
 body {
   font-family: "Helvetica", sans-serif;
   font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 1.5rem;
+  font-size: var(--fs-normal);
+  line-height: 160%;
   color: #3C3938;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 130%;
+}
+
+h1 {
+  font-size: var(--fs-xlarge);
 }
 
 /* Utilities */
@@ -43,6 +69,22 @@ body {
 .container {
   max-width: min(1275px, 100% - 2rem);
   margin-inline: auto;
+}
+
+.fs-small {
+  font-size: var(--fs-small);
+}
+
+.fs-normal {
+  font-size: var(--fs-normal);
+}
+
+.fs-large {
+  font-size: var(--fs-large);
+}
+
+.fs-xlarge {
+  font-size: var(--fs-xlarge);
 }
 
 /* Header */
@@ -198,7 +240,7 @@ footer {
 .subscribe h2 {
   font-family: "Miller", serif;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: var(--fs-large);
   margin-bottom: 1rem;
   color: black;
 }
@@ -229,6 +271,17 @@ footer {
   background: hsl(0, 100%, 100%);
 }
 
+@media (max-width: 50em) {
+  .subscribe__form {
+    flex-direction: column;
+  }
+
+  .subscribe__form button {
+    width: 60%;
+    margin-inline: auto;
+  }
+}
+
 .footer {
   padding-block: 3.5rem;
   background-color: hsla(16, 100%, 96%, 1);
@@ -240,12 +293,23 @@ footer {
   place-items: center;
 }
 
+.footer__nav ul {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .footer__nav li {
   list-style: none;
+  text-align: center;
+}
+
+.footer__nav  li:nth-child(5) {
+  margin-inline: auto;
 }
 
 .footer__nav a {
-  font-size: 1rem;
+  font-size: var(--fs-small);
   text-transform: uppercase;
   text-decoration: none;
   color: hsla(15, 3%, 23%, 1);
