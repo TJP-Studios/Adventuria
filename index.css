@@ -354,6 +354,88 @@ h1 {
 }
 
 
+/* Shared BG */
+.shared-bg {
+  background-image: url("./images/shared-bg.svg");
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+}
+
+/* About */
+.about {
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding-block: 20rem;
+  padding-inline: 28%;
+  text-align: center;
+}
+
+.about h2 {
+  color: black;
+  margin-bottom: 3rem;
+}
+
+.about h2 span {
+  color: hsla(17, 100%, 58%, 1);
+}
+
+.about__button {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: var(--fs-normal);
+  border-radius: 1.25rem;
+  padding: 1rem 2rem;
+  box-shadow: 0px 13px 21px 0px rgba(255, 112, 53, 0.30);
+  color: hsla(17, 100%, 58%, 1);
+  background-color: white;
+}
+
+.traveler-boy,
+.traveler-girl {
+  position: absolute;
+  z-index: -1;
+}
+
+.traveler-boy {
+  top: 4rem;
+  left: 2rem;
+}
+
+.traveler-girl {
+  bottom: 1rem;
+  right: 2rem;
+}
+
+@media (max-width: 50em) {
+  .about {
+    padding-block: 12rem;
+  }
+
+  .traveler-boy,
+  .traveler-girl {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 35em) {
+  .about {
+    padding-inline: 10%;
+    padding-block: 10rem;
+  }
+
+  .traveler-boy {
+    top: 2rem;
+  }
+  
+  .traveler-boy,
+  .traveler-girl {
+    width: 8rem;
+  }
+}
+
 /* Footer */
 footer {
   text-align: center;
