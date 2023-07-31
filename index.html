@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adventuria | Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="index.css">
 </head>
 
@@ -58,12 +59,146 @@
     </div>
   </header>
 
+  <main>
+    <section class="hero">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide africa">
+            <div class="container">
+              <div class="progress-bar">
+                <img src="./images/progress-bar-africa.svg" alt="">
+                <p>Africa</p>
+              </div>
+              <div class="hero__text">
+                <h1>Discover The Hidden Gems Of Africa.</h1>
+                <button>Explore</button>
+              </div>
+              <div class="mouse-scroll">
+                <button>
+                  <img src="./images/mouse-scroll.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide europe">
+            <div class="container">
+              <div class="progress-bar">
+                <img src="./images/progress-bar-europe.svg" alt="">
+                <p>Europe</p>
+              </div>
+              <div class="hero__text">
+                <h1>Immerse Yourself In the Beauty Of Europe.</h1>
+                <button>Explore</button>
+              </div>
+              <div class="mouse-scroll">
+                <button>
+                  <img src="./images/mouse-scroll.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide asia">
+            <div class="container">
+              <div class="progress-bar">
+                <img src="./images/progress-bar-asia.svg" alt="">
+                <p>Asia</p>
+              </div>
+              <div class="hero__text">
+                <h1>Unravel The Extravaganza Of Asia.</h1>
+                <button>Explore</button>
+              </div>
+              <div class="mouse-scroll">
+                <button>
+                  <img src="./images/mouse-scroll.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide antartica">
+            <div class="container">
+              <div class="progress-bar">
+                <img src="./images/progress-bar-antartica.svg" alt="">
+                <p>Antartica</p>
+              </div>
+              <div class="hero__text">
+                <h1>Explore Beyond The Ice Glaciers Of Antartica. </h1>
+                <button>Explore</button>
+              </div>
+              <div class="mouse-scroll">
+                <button>
+                  <img src="./images/mouse-scroll.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide oceania">
+            <div class="container">
+              <div class="progress-bar">
+                <img src="./images/progress-bar-oceania.svg" alt="">
+                <p>Oceania</p>
+              </div>
+              <div class="hero__text">
+                <h1>Oceania: Where Nature's Majesty Meets Indigenous Spirit</h1>
+                <button>Explore</button>
+              </div>
+              <div class="mouse-scroll">
+                <button>
+                  <img src="./images/mouse-scroll.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide south-america">
+            <div class="container">
+              <div class="progress-bar">
+                <img src="./images/progress-bar-south-america.svg" alt="">
+                <p>South America</p>
+              </div>
+              <div class="hero__text">
+                <h1>Relive The Ancient Legacies Of South America.</h1>
+                <button>Explore</button>
+              </div>
+              <div class="mouse-scroll">
+                <button>
+                  <img src="./images/mouse-scroll.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide north-america">
+            <div class="container">
+              <div class="progress-bar">
+                <img src="./images/progress-bar-north-america.svg" alt="">
+                <p>North America</p>
+              </div>
+              <div class="hero__text">
+                <h1>North America: Where Dreams Take Flight</h1>
+                <button>Explore</button>
+              </div>
+              <div class="mouse-scroll">
+                <button>
+                  <img src="./images/mouse-scroll.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next">
+          <img src="./images/swiper-next.svg" alt="">
+        </div>
+        <div class="swiper-button-prev">
+          <img src="./images/swiper-previous.svg" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer>
     <section class="subscribe">
       <div class="container">
         <div class="subscribe__text">
           <h2>Stay Up To Date To Latest Articles</h2>
-          <p>Stay updated for more exciting updates, travel guides, and heartwarming tales from around the globe by subscribing to our news letter.</p>
+          <p>Stay updated for more exciting updates, travel guides, and heartwarming tales from around the globe by subscribing to our newsletter.</p>
         </div>
         <form class="subscribe__form flex">
           <input type="text" placeholder="Email Address">
@@ -108,6 +243,19 @@
       </div>
     </section>
   </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 
 </html>
