@@ -239,10 +239,8 @@ footer {
 .intro-text {
     text-align: center;
     max-width: 829px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4%;
-    margin-bottom: 4%;
+    width: 100%;
+    margin: 4% auto;
 }
 
 .intro-text h3 {
@@ -261,4 +259,74 @@ footer {
     font-family: Helvetica;
     font-size: 1.125rem;
     font-weight: 400;
+}
+
+/* Image Grid */
+.img-grid {
+    display: flex;
+    justify-content: center;
+    max-width: 1, 279px;
+    width: 100%;
+}
+
+.left-col,
+.middle-col,
+.right-col {
+    margin: 5%;
+}
+
+.img-grid img {
+    border-radius: 8px;
+    max-width: 409px;
+    width: 100%;
+    margin: 10%;
+}
+
+.africa,
+.antartica,
+.europe,
+.oceania,
+.north-america,
+.asia,
+.south-america {
+    position: relative;
+}
+
+.africa h4,
+.antartica h4,
+.europe h4,
+.oceania h4,
+.north-america h4,
+.asia h4,
+.south-america h4 {
+    font-family: Miller;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #F5F5F5;
+    position: absolute;
+    top: 39%;
+    left: 39%;
+}
+
+.africa button,
+.antartica button,
+.europe button,
+.oceania button,
+.north-america button,
+.asia button,
+.south-america button {
+    max-width: 180px;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 20px;
+    background-color: #FF7035;
+    color: #FFFEFE;
+    font-family: Helvetica;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0px 13px 21px 0px #FF70354D;
+    position: absolute;
+    bottom: 30%;
+    left: 30%;
 }
