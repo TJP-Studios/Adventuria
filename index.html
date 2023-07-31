@@ -11,7 +11,7 @@
 <body>
   <header class="header">
     <div class="container">
-      <nav class="header__nav flex">
+      <nav class="header__nav flex" data-visible="false">
         <ul class="flex">
           <li>
             <a class="current" href="index.html">Home</a>
@@ -42,6 +42,18 @@
             </button>
           </form>
         </ul>
+      </nav>
+      <nav class="mobile-nav flex">
+        <img src="./images/adventuria-logo.svg" alt="Adventuria logo">
+        <ul>
+          <li>
+            <a class="current" href="index.html">Home</a>
+          </li>
+        </ul>
+        <button class="mobile-nav__toggle" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
       </nav>
     </div>
   </header>
