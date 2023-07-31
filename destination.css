@@ -262,24 +262,42 @@ footer {
 }
 
 /* Image Grid */
-.img-grid {
-    display: flex;
-    justify-content: center;
-    max-width: 1, 279px;
-    width: 100%;
+
+.img-grid h4 {
+    font-family: Miller;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #F5F5F5;
 }
 
-.left-col,
-.middle-col,
-.right-col {
-    margin: 5%;
+.img-grid button {
+    max-width: 180px;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 20px;
+    background-color: #FF7035;
+    color: #FFFEFE;
+    font-family: Helvetica;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0px 13px 21px 0px #FF70354D;
 }
 
 .img-grid img {
     border-radius: 8px;
-    max-width: 409px;
-    width: 100%;
-    margin: 10%;
+    margin-bottom: 4%;
+}
+
+.img-grid {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.left-col,
+.middle-col {
+    margin-right: 1.5%;
 }
 
 .africa,
@@ -299,13 +317,36 @@ footer {
 .north-america h4,
 .asia h4,
 .south-america h4 {
-    font-family: Miller;
-    font-size: 2rem;
-    font-weight: 400;
-    color: #F5F5F5;
     position: absolute;
-    top: 39%;
+    top: 37%;
+}
+
+.africa h4 {
     left: 39%;
+}
+
+.antartica h4 {
+    left: 34%;
+}
+
+.europe h4 {
+    left: 37%;
+}
+
+.oceania h4 {
+    left: 36%;
+}
+
+.north-america h4 {
+    left: 25%;
+}
+
+.asia h4 {
+    left: 43%;
+}
+
+.south-america h4 {
+    left: 25%;
 }
 
 .africa button,
@@ -315,18 +356,7 @@ footer {
 .north-america button,
 .asia button,
 .south-america button {
-    max-width: 180px;
-    width: 100%;
-    padding: 1rem 1.5rem;
-    border-radius: 20px;
-    background-color: #FF7035;
-    color: #FFFEFE;
-    font-family: Helvetica;
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    box-shadow: 0px 13px 21px 0px #FF70354D;
     position: absolute;
     bottom: 30%;
-    left: 30%;
+    left: 28%;
 }
