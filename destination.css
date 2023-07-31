@@ -95,11 +95,7 @@ body {
 }
 
 main {
-    /* padding: 2rem; */
     background-color: #FFFEFE;
-    position: absolute;
-    right: 0;
-    left: 0;
 }
 
 /* Footer */
@@ -212,7 +208,7 @@ footer {
 
 .banner-text {
     font-family: Miller;
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 600;
     text-align: center;
     color: #F9F9F9;
