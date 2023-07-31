@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("./fonts/helvetica-webfont.woff2") format("woff2"),
+       url("./fonts/helvetica-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("./fonts/helvetica-oblique-webfont.woff2") format("woff2"),
+       url("./fonts/helvetica-oblique-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("./fonts/helvetica-bold-webfont.woff2") format("woff2"),
+       url("./fonts/helvetica-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("./fonts/helvetica-boldoblique-webfont.woff2") format("woff2"),
+       url("./fonts/helvetica-boldoblique-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Miller";
+  src: url("./fonts/miller_banner_light-webfont.woff2") format("woff2"),
+       url("./fonts/miller_banner_light-webfont.woff2") format("woff");
+  font-weight: light;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Miller";
+  src: url("./fonts/miller_banner_light_italic-webfont.woff2") format("woff2"),
+       url("./fonts/miller_banner_light_italic-webfont.woff") format("woff");
+  font-weight: light;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Miller";
+  src: url("./fonts/miller_banner_roman-webfont.woff2") format("woff2"),
+       url("./fonts/miller_banner_roman-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Miller";
+  src: url("./fonts/miller_banner_italic-webfont.woff2") format("woff2"),
+       url("./fonts/miller_banner_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Miller";
+  src: url("./fonts/miller_banner_semibold-webfont.woff2") format("woff2"),
+       url("./fonts/miller_banner_semibold-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Miller";
+  src: url("./fonts/miller_banner_semibold_italic-webfont.woff2") format("woff2"),
+       url("./fonts/miller_banner_semibold_italic-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Miller";
+  src: url("./fonts/miller_banner_bold-webfont.woff2") format("woff2"),
+       url("./fonts/miller_banner_bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Miller";
+  src: url("./fonts/miller_banner_bold_italic-webfont.woff2") format("woff2"),
+       url("./fonts/miller_banner_bold_italic-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Miller";
+  src: url("./fonts/miller_banner_black-webfont.woff2") format("woff2"),
+       url("./fonts/miller_banner_black-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Miller";
+  src: url("./fonts/miller_banner_black_italic-webfont.woff2") format("woff2"),
+       url("./fonts/miller_banner_black_italic-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
