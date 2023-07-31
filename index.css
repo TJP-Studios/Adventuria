@@ -26,6 +26,7 @@
 
 img,
 picture,
+source,
 svg {
   max-width: 100%;
 }
@@ -49,6 +50,7 @@ body {
   font-size: var(--fs-normal);
   line-height: 160%;
   color: #3C3938;
+  overflow-x: hidden;
 }
 
 h1,
@@ -68,6 +70,10 @@ h1 {
 /* Utilities */
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .container {
@@ -102,6 +108,11 @@ h1 {
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 700;
+  font-size: var(--fs-normal);
+  border-radius: 1.25rem;
+  padding: 1rem 2rem;
+  box-shadow: 0px 13px 21px 0px rgba(255, 112, 53, 0.30);
 }
 
 /* Header */
@@ -430,6 +441,10 @@ h1 {
   .traveler-girl {
     width: 15rem;
   }
+
+  .about__button {
+    font-size: .75rem;
+  }
 }
 
 @media (max-width: 35em) {
@@ -464,6 +479,10 @@ h1 {
 }
 
 .destinations__btn {
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: auto;
+  width: 33ch;
   font-weight: 700;
   font-size: var(--fs-normal);
   border-radius: 1.25rem;
@@ -476,6 +495,53 @@ h1 {
 @media (max-width: 50em) {
   .destinations__images {
     flex-direction: column;
+  }
+
+  .destinations__btn {
+    width: 38ch;
+    font-size: .75rem;
+  }
+}
+
+/* Travel Resources */
+.resources {
+  padding-block: 1rem 4rem;
+}
+
+.resources .container.grid {
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+}
+
+.resources h2 {
+  font-size: var(--fs-xlarge);
+}
+
+.resources__text > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.resources__btn {
+  width: 35ch;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: hsla(17, 100%, 58%, 1);
+}
+
+@media (max-width: 50em) {
+  .resources {
+    text-align: center;
+  }
+
+  .resources__btn {
+    font-size: .75rem;
+    width: 40ch;
+    margin-inline: auto;
+  }
+
+  .resources .container.grid {
+    grid-template-columns: 1fr;
   }
 }
 
