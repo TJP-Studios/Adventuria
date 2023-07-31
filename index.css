@@ -26,6 +26,7 @@
 
 img,
 picture,
+source,
 svg {
   max-width: 100%;
 }
@@ -49,6 +50,7 @@ body {
   font-size: var(--fs-normal);
   line-height: 160%;
   color: #3C3938;
+  overflow-x: hidden;
 }
 
 h1,
@@ -70,6 +72,10 @@ h1 {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .container {
   max-width: min(1275px, 100% - 2rem);
   margin-inline: auto;
@@ -89,6 +95,24 @@ h1 {
 
 .fs-xlarge {
   font-size: var(--fs-xlarge);
+}
+
+.clr-primary {
+  color: hsla(17, 100%, 58%, 1);
+}
+
+.btn {
+  border: 0;
+  outline: none;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: var(--fs-normal);
+  border-radius: 1.25rem;
+  padding: 1rem 2rem;
+  box-shadow: 0px 13px 21px 0px rgba(255, 112, 53, 0.30);
 }
 
 /* Header */
@@ -353,7 +377,6 @@ h1 {
   }
 }
 
-
 /* Shared BG */
 .shared-bg {
   background-image: url("./images/shared-bg.svg");
@@ -372,13 +395,14 @@ h1 {
   text-align: center;
 }
 
+.about__text {
+  position: relative;
+  z-index: 10;
+}
+
 .about h2 {
   color: black;
   margin-bottom: 3rem;
-}
-
-.about h2 span {
-  color: hsla(17, 100%, 58%, 1);
 }
 
 .about__button {
@@ -396,7 +420,6 @@ h1 {
 .traveler-boy,
 .traveler-girl {
   position: absolute;
-  z-index: -1;
 }
 
 .traveler-boy {
@@ -418,6 +441,10 @@ h1 {
   .traveler-girl {
     width: 15rem;
   }
+
+  .about__button {
+    font-size: .75rem;
+  }
 }
 
 @media (max-width: 35em) {
@@ -433,6 +460,88 @@ h1 {
   .traveler-boy,
   .traveler-girl {
     width: 8rem;
+  }
+}
+
+/* Destinations */
+.destinations {
+  padding-block: 2rem 10rem;
+  text-align: center;
+}
+
+.destinations .container > *:not(:last-child){
+  margin-bottom: 3rem;
+}
+
+.destinations__text h2 {
+  font-size: var(--fs-xlarge);
+  color: black;
+}
+
+.destinations__btn {
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: auto;
+  width: 33ch;
+  font-weight: 700;
+  font-size: var(--fs-normal);
+  border-radius: 1.25rem;
+  padding: 1rem 2rem;
+  box-shadow: 0px 13px 21px 0px rgba(255, 112, 53, 0.30);
+  color: white;
+  background-color: hsla(17, 100%, 58%, 1);
+}
+
+@media (max-width: 50em) {
+  .destinations__images {
+    flex-direction: column;
+  }
+
+  .destinations__btn {
+    width: 38ch;
+    font-size: .75rem;
+  }
+}
+
+/* Travel Resources */
+.resources {
+  padding-block: 1rem 4rem;
+}
+
+.resources .container.grid {
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+}
+
+.resources h2 {
+  font-size: var(--fs-xlarge);
+}
+
+.resources__text > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.resources__btn {
+  width: 35ch;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: hsla(17, 100%, 58%, 1);
+}
+
+@media (max-width: 50em) {
+  .resources {
+    text-align: center;
+  }
+
+  .resources__btn {
+    font-size: .75rem;
+    width: 40ch;
+    margin-inline: auto;
+  }
+
+  .resources .container.grid {
+    grid-template-columns: 1fr;
   }
 }
 
