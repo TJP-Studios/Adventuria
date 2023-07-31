@@ -91,6 +91,19 @@ h1 {
   font-size: var(--fs-xlarge);
 }
 
+.clr-primary {
+  color: hsla(17, 100%, 58%, 1);
+}
+
+.btn {
+  border: 0;
+  outline: none;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 /* Header */
 .header {
   padding-block: .5rem;
@@ -353,7 +366,6 @@ h1 {
   }
 }
 
-
 /* Shared BG */
 .shared-bg {
   background-image: url("./images/shared-bg.svg");
@@ -372,13 +384,14 @@ h1 {
   text-align: center;
 }
 
+.about__text {
+  position: relative;
+  z-index: 10;
+}
+
 .about h2 {
   color: black;
   margin-bottom: 3rem;
-}
-
-.about h2 span {
-  color: hsla(17, 100%, 58%, 1);
 }
 
 .about__button {
@@ -396,7 +409,6 @@ h1 {
 .traveler-boy,
 .traveler-girl {
   position: absolute;
-  z-index: -1;
 }
 
 .traveler-boy {
@@ -433,6 +445,37 @@ h1 {
   .traveler-boy,
   .traveler-girl {
     width: 8rem;
+  }
+}
+
+/* Destinations */
+.destinations {
+  padding-block: 2rem 10rem;
+  text-align: center;
+}
+
+.destinations .container > *:not(:last-child){
+  margin-bottom: 3rem;
+}
+
+.destinations__text h2 {
+  font-size: var(--fs-xlarge);
+  color: black;
+}
+
+.destinations__btn {
+  font-weight: 700;
+  font-size: var(--fs-normal);
+  border-radius: 1.25rem;
+  padding: 1rem 2rem;
+  box-shadow: 0px 13px 21px 0px rgba(255, 112, 53, 0.30);
+  color: white;
+  background-color: hsla(17, 100%, 58%, 1);
+}
+
+@media (max-width: 50em) {
+  .destinations__images {
+    flex-direction: column;
   }
 }
 
