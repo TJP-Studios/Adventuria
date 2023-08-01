@@ -30,7 +30,6 @@ button {
 body {
     font-family: "Helvetica", sans-serif;
     font-size: 1.125rem;
-    line-height: 1.5rem;
     color: #3C3938;
 }
 
@@ -213,10 +212,10 @@ footer {
     text-align: center;
     color: #F9F9F9;
     position: absolute;
-    top: 50%;
-    bottom: 50%;
-    left: 0%;
-    right: 0%;
+    top: 42%;
+    left: 22%;
+    max-width: 829px;
+    width: 100%;
 }
 
 .banner-arrow {
