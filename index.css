@@ -3,6 +3,7 @@
 :root {
   --fs-xlarge: 4rem;
   --fs-large: 2.5rem;
+  --fs-medium: 2rem;
   --fs-normal: 1.125rem;
   --fs-small: 1rem;
 }
@@ -11,6 +12,7 @@
   :root {
     --fs-xlarge: 2.5rem;
     --fs-large: 2rem;
+    --fs-medium: 1.25rem;
     --fs-normal: 1rem;
     --fs-small: .875rem;
   }
@@ -91,6 +93,10 @@ h1 {
 
 .fs-normal {
   font-size: var(--fs-normal);
+}
+
+.fs-medium {
+  font-size: var(--fs-medium);
 }
 
 .fs-large {
@@ -575,18 +581,12 @@ h1 {
 
 .travel-tips__callout {
   font-family: "Miller", serif;
-  font-size: 2rem;
+  font-size: var(--fs-medium);
   width: fit-content;
   margin-inline: auto;
   padding: 0.5rem 1rem;
   color: black;
   background-color: #FCE2D7;
-}
-
-@media (max-width: 50em) {
-  .travel-tips__callout {
-    font-size: 1.25rem;
-  }
 }
 
 /* Footer */
