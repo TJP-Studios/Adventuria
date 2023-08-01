@@ -38,6 +38,10 @@ select {
   font: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 button {
   border: 0;
   outline: none;
@@ -545,6 +549,46 @@ h1 {
   }
 }
 
+/* Travel Tips */
+.travel-tips {
+  padding-block: 4rem 10rem;
+  text-align: center;
+  color: white;
+  background-image: url("./images/travel-tips-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.travel-tips .container {
+  gap: 6rem;
+}
+
+.travel-tips__text > *:not(:last-child) {
+  padding-bottom: 2rem;
+}
+
+.travel-tips__btn {
+  color: white;
+  background-color: hsla(17, 100%, 58%, 1);
+}
+
+.travel-tips__callout {
+  font-family: "Miller", serif;
+  font-size: 2rem;
+  width: fit-content;
+  margin-inline: auto;
+  padding: 0.5rem 1rem;
+  color: black;
+  background-color: #FCE2D7;
+}
+
+@media (max-width: 50em) {
+  .travel-tips__callout {
+    font-size: 1.25rem;
+  }
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -620,6 +664,7 @@ footer {
 }
 
 .footer {
+  position: relative;
   padding-block: 3.5rem;
   background-color: hsla(16, 100%, 96%, 1);
 }
@@ -663,4 +708,21 @@ footer {
 
 .copyright {
   font-size: .875rem;
+}
+
+.scroll-up {
+  position: absolute;
+  bottom: 20%;
+  right: 6%;
+  text-transform: uppercase;
+}
+
+.scroll-up a {
+  display: grid;
+  gap: 1rem;
+  place-items: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: var(--fs-normal);
+  font-weight: 600;
 }
