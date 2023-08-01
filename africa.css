@@ -233,3 +233,27 @@ footer {
     bottom: 2.5%;
     right: 48%;
 }
+
+.banner-scroll {
+    position: absolute;
+    left: 40%;
+    top: 15%;
+}
+
+.banner-button {
+    position: absolute;
+    top: 15%;
+    left: 8%;
+    background-color: #FFFEFE;
+    padding: 16px 24px;
+    border-radius: 20px;
+    border: 1px;
+    color: #FF6829;
+    text-transform: uppercase;
+}
+
+.banner-arrow-right {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
