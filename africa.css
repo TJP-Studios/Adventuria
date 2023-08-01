@@ -226,6 +226,11 @@ footer {
     left: 48%;
 }
 
+.scroller {
+    display: flex;
+    align-items: center;
+}
+
 .banner-mouse {
     max-width: 12.86px;
     width: 100%;
@@ -240,14 +245,34 @@ footer {
     top: 15%;
 }
 
+.banner-scroll span {
+    font-family: Helvetica;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #F5F5F5;
+    margin: 0 5%;
+}
+
+.banner-scroll .orange-text {
+    color: #FC4F08;
+}
+
+.banner-scroll p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFEFE9;
+}
+
 .banner-button {
     position: absolute;
     top: 15%;
     left: 8%;
     background-color: #FFFEFE;
-    padding: 16px 24px;
+    padding: 1rem 1.5rem;
     border-radius: 20px;
-    border: 1px;
     color: #FF6829;
     text-transform: uppercase;
 }
