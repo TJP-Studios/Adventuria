@@ -2,13 +2,375 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adventuria | Home</title>
+  <link rel="shortcut icon" href="./images/adventuria-logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+  <header id="header" class="header">
+    <div class="container">
+      <nav class="header__nav flex" data-visible="false">
+        <ul class="flex">
+          <li>
+            <a class="current" href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#">Travel Destination</a>
+          </li>
+          <li>
+            <a href="#">Travel Resources</a>
+          </li>
+        </ul>
+        <div>
+          <a href="index.html">
+            <img src="./images/adventuria-logo.svg" alt="">
+          </a>
+        </div>
+        <ul class="flex">
+          <li>
+            <a href="about-me.html">About Me</a>
+          </li>
+          <li>
+            <a href="#">Faq</a>
+          </li>
+          <form class="header__form flex">
+            <input type="text" placeholder="Search articles...">
+            <button>
+              <img src="./images/search-icon.svg" alt="">
+            </button>
+          </form>
+        </ul>
+      </nav>
+      <nav class="mobile-nav flex">
+        <img src="./images/adventuria-logo.svg" alt="Adventuria logo">
+        <ul>
+          <li>
+            <a class="current" href="index.html">Home</a>
+          </li>
+        </ul>
+        <button class="mobile-nav__toggle" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <section class="hero">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide africa">
+            <div class="container">
+              <div class="progress-bar">
+                <img src="./images/progress-bar-africa.svg" alt="">
+                <p>Africa</p>
+              </div>
+              <div class="hero__text">
+                <h1>Discover The Hidden Gems Of Africa.</h1>
+                <button>Explore</button>
+              </div>
+              <div class="mouse-scroll">
+                <button>
+                  <a href="#about"><img src="./images/mouse-scroll.svg" alt=""></a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide europe">
+            <div class="container">
+              <div class="progress-bar">
+                <img src="./images/progress-bar-europe.svg" alt="">
+                <p>Europe</p>
+              </div>
+              <div class="hero__text">
+                <h1>Immerse Yourself In the Beauty Of Europe.</h1>
+                <button>Explore</button>
+              </div>
+              <div class="mouse-scroll">
+                <button>
+                  <a href="#about"><img src="./images/mouse-scroll.svg" alt=""></a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide asia">
+            <div class="container">
+              <div class="progress-bar">
+                <img src="./images/progress-bar-asia.svg" alt="">
+                <p>Asia</p>
+              </div>
+              <div class="hero__text">
+                <h1>Unravel The Extravaganza Of Asia.</h1>
+                <button>Explore</button>
+              </div>
+              <div class="mouse-scroll">
+                <button>
+                  <a href="#about"><img src="./images/mouse-scroll.svg" alt=""></a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide antartica">
+            <div class="container">
+              <div class="progress-bar">
+                <img src="./images/progress-bar-antartica.svg" alt="">
+                <p>Antartica</p>
+              </div>
+              <div class="hero__text">
+                <h1>Explore Beyond The Ice Glaciers Of Antartica. </h1>
+                <button>Explore</button>
+              </div>
+              <div class="mouse-scroll">
+                <button>
+                  <a href="#about"><img src="./images/mouse-scroll.svg" alt=""></a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide oceania">
+            <div class="container">
+              <div class="progress-bar">
+                <img src="./images/progress-bar-oceania.svg" alt="">
+                <p>Oceania</p>
+              </div>
+              <div class="hero__text">
+                <h1>Oceania: Where Nature's Majesty Meets Indigenous Spirit</h1>
+                <button>Explore</button>
+              </div>
+              <div class="mouse-scroll">
+                <button>
+                  <a href="#about"><img src="./images/mouse-scroll.svg" alt=""></a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide south-america">
+            <div class="container">
+              <div class="progress-bar">
+                <img src="./images/progress-bar-south-america.svg" alt="">
+                <p>South America</p>
+              </div>
+              <div class="hero__text">
+                <h1>Relive The Ancient Legacies Of South America.</h1>
+                <button>Explore</button>
+              </div>
+              <div class="mouse-scroll">
+                <button>
+                  <a href="#about"><img src="./images/mouse-scroll.svg" alt=""></a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide north-america">
+            <div class="container">
+              <div class="progress-bar">
+                <img src="./images/progress-bar-north-america.svg" alt="">
+                <p>North America</p>
+              </div>
+              <div class="hero__text">
+                <h1>North America: Where Dreams Take Flight</h1>
+                <button>Explore</button>
+              </div>
+              <div class="mouse-scroll">
+                <button>
+                  <a href="#about"><img src="./images/mouse-scroll.svg" alt=""></a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next">
+          <img src="./images/swiper-next.svg" alt="">
+        </div>
+        <div class="swiper-button-prev">
+          <img src="./images/swiper-previous.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="shared-bg">
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about__text">
+            <h2 class="fs-xlarge">I <span class="clr-primary">Travel</span> The World, To Help You Plan Better.</h2>
+            <a class="about__button" href="#">More About Me</a>
+          </div>
+          <div class="about__img">
+            <img class="traveler-boy" src="./images/traveler-boy.svg" alt="">
+            <img class="traveler-girl" src="./images/traveler-girl.svg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="destinations">
+        <div class="container">
+          <div class="destinations__text">
+            <h2>Featured <span class="clr-primary">Destinations</span></h2>
+            <p>Embark on a virtual journey to breathtaking landscapes, vibrant cultures, and hidden gems<br>Delve into a curated selection of the world's most captivating destinations.</p>
+          </div>
+          <div class="destinations__images flex">
+            <a href="#"><img src="./images/lagos-destination.svg" alt="Lagos"></a>
+            <a href="#"><img src="./images/stockholm-destination.svg" alt="Stockholm"></a>
+            <a href="#"><img src="./images/shanghai-destination.svg" alt="Shanghai"></a>
+          </div>
+          <a href="#" class="btn destinations__btn flex">
+            <span>See More Destinations</span>
+            <img src="./images/arrow-icon.svg" alt="">
+          </a>
+        </div>
+      </section>
+
+      <section class="resources">
+        <div class="container grid">
+          <div class="resources__text">
+            <h2>Get <span class="clr-primary">Equipped</span> For Your Next Trip.</h2>
+            <p>Travel Smart: Essential Gear for Your Next Adventure!<br>Discover the must-have equipment and accessories to elevate your travel experience. From compact packing solutions to tech-savvy gadgets, get equipped for seamless journeys ahead.</p>
+            <a href="#" class="btn resources__btn flex">
+              <span>View Travel Resources</span>
+              <img src="./images/arrow-icon.svg" alt="">
+            </a>
+          </div>
+          <picture class="resources__image">
+            <source media='(max-width: 768px)'
+                    srcset='./images/travel-resources-mobile.svg'/>
+            <img src='./images/travel-resources-desktop.svg'/>
+          </picture>
+        </div>
+      </section>
+      
+      <section class="featured-articles">
+        <div class="container">
+          <div class="featured-articles__text">
+            <h2 class="fs-xlarge">Featured <span class="clr-primary">Articles</span></h2>
+            <p>Explore extraordinary travel tales, cultural insights, and Immerse yourself in the words that transport you to far-off lands and inspire your next adventure.</p>
+          </div>
+          <div class="featured-articles__articles flex">
+            <article class="featured-article">
+              <img src="./images/articles-lagos.svg" alt="">
+              <div class="featured-article__text">
+                <div class="featured-article__title flex">
+                  <h3 class="fs-medium">Why You Need To Go<br>To Lagos For Vacation.</h3>
+                  <p>25th July, 2023</p>
+                </div>
+                <div class="featured-article__tags flex">
+                  <p>Trending</p>
+                  <p>Places</p>
+                  <p>West Africa</p>
+                </div>
+              </div>
+              <a href="#" class="btn featured-article__btn">Read More</a>
+            </article>
+            <article class="featured-article">
+              <img src="./images/articles-north-africa.svg" alt="">
+              <div class="featured-article__text">
+                <div class="featured-article__title flex">
+                  <h3 class="fs-medium">Top 10 Cities To Visit<br>In North Africa.</h3>
+                  <p>25th July, 2023</p>
+                </div>
+                <div class="featured-article__tags flex">
+                  <p>Popular</p>
+                  <p>North</p>
+                  <p>Places</p>
+                </div>
+              </div>
+              <a href="#" class="btn featured-article__btn">Read More</a>
+            </article>
+          </div>
+          <div>
+            <a href="#" class="btn featured-articles__btn flex">
+              <span>See All Articles</span>
+              <img src="./images/arrow-icon.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="travel-tips">
+        <div class="container grid">
+          <p class="travel-tips__callout">Travel Tip Of The Day</p>
+          <div class="travel-tips__text">
+            <h2 class="fs-xlarge">Top 10 Travel Gadgets</h2>
+            <a href="#" class="btn travel-tips__btn">Read More</a>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <section class="subscribe">
+      <div class="container">
+        <div class="subscribe__text">
+          <h2>Stay Up To Date To Latest Articles</h2>
+          <p>Stay updated for more exciting updates, travel guides, and heartwarming tales from around the globe by subscribing to our newsletter.</p>
+        </div>
+        <form class="subscribe__form flex">
+          <input type="text" placeholder="Email Address">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="container">
+        <img src="./images/adventuria-logo.svg" alt="">
+        <nav class="footer__nav">
+          <ul class="flex">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="index.html">Travel Destination</a>
+            </li>
+            <li>
+              <a href="index.html">Travel Resources</a>
+            </li>
+            <li>
+              <a href="index.html">About Me</a>
+            </li>
+            <li>
+              <a href="index.html">Faq</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__icons flex">
+          <a target="_blank" href="https://facebook.com">
+            <img src="./images/facebook-icon.svg" alt="">
+          </a>
+          <a target="_blank" href="https://instagram.com">
+            <img src="./images/instagram-icon.svg" alt="">
+          </a>
+          <a target="_blank" href="https://twitter.com">
+            <img src="./images/twitter-icon.svg" alt="">
+          </a>
+        </div>
+        <p class="copyright">Copyright ©2023 All rights reserved</p>
+        <div class="scroll-up">
+          <a href="#header">
+            <img src="./images/scroll-up-arrow.svg" alt="Scroll Up Arrow Icon">
+            <p>Scroll Up</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 
 </html>
