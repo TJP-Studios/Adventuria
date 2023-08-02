@@ -18,3 +18,28 @@
 
 
 }
+
+.faqSection2{
+    border: 1px solid red;
+    width: 730px;
+    display: table; 
+    margin: 0 auto; 
+    padding: 3%; 
+}
+
+.faqSection2 > div{
+    width: 100%;
+}
+
+.faqSub1{
+    display: flex; 
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.faqTimes{
+    justify-content: flex-end;
+}
+
+.faqSection3{
+    text-align: center;
+}
