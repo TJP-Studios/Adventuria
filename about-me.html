@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adventuria | About Me</title>
+  <link rel="shortcut icon" href="./images/adventuria-logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="about-me.css">
+</head>
+
+<body>
+  <header id="header" class="header">
+    <div class="container">
+      <nav class="header__nav flex" data-visible="false">
+        <ul class="flex">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#">Travel Destination</a>
+          </li>
+          <li>
+            <a href="#">Travel Resources</a>
+          </li>
+        </ul>
+        <div>
+          <a href="index.html">
+            <img src="./images/adventuria-logo.svg" alt="">
+          </a>
+        </div>
+        <ul class="flex">
+          <li>
+            <a class="current" href="#">About Me</a>
+          </li>
+          <li>
+            <a href="#">Faq</a>
+          </li>
+          <form class="header__form flex">
+            <input type="text" placeholder="Search articles...">
+            <button>
+              <img src="./images/search-icon.svg" alt="">
+            </button>
+          </form>
+        </ul>
+      </nav>
+      <nav class="mobile-nav flex">
+        <img src="./images/adventuria-logo.svg" alt="Adventuria logo">
+        <ul>
+          <li>
+            <a class="current" href="about-me.html">About Me</a>
+          </li>
+        </ul>
+        <button class="mobile-nav__toggle" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>About Me</h1>
+        <div class="mouse-scroll">
+          <button>
+            <a href="#about-me"><img src="./images/mouse-scroll.svg" alt=""></a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-me" class="about-me">
+      <div class="container grid">
+        <img src="./images/blogger-michelle.svg" alt="">
+        <div class="about-me__text">
+          <h2>Hi, I'm <span class="clr-primary">Michelle</span> And I Love Blogging.</h2>
+          <p>My name is Michelle Okafor, I am a quitter. Welcome to my travel blog, I love starting things and not seeing them through and I love travelling to beautiful places. My job most times is offline and I shuttle everyday to work which allows me the opportunity to converse with people and make friends. I also enjoy shaking my body, meeting new people and learning new languages.</p>
+          <p>I am a passionate traveler who loves to travel and write about my visit to other countries far and near. I love to see new places and discovering the enigma of the world, The excitement and adrenaline rush of stepping off a plane ready to lunch into a totally new place all for the sake of starting a new adventure is what drives me to shuttle from one country to another.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="why">
+      <div class="container grid">
+        <div class="why__text">
+          <h2>Why I Started <span class="clr-primary">Adventuria</span></h2>
+          <p>I started Adventuria due to the fact that I felt alone after consuming a nasty breakfast from my ex-boyfriend. I was fresh out of university, naïve and depressed about how my life sucked.</p>
+          <p>So I packed my bags and drove into the sunset while also draining up my life savings. while on transit I stopped and I stared into the clouds, only to see beautiful birds flapping their gorgeous wings, and suddenly I was inspired to travel the world and document my travel experiences.</p>
+          <p>My first travel was to Afghanistan, where I teamed up with a band of rebels to battle the Talibans. It was one of the best experiences of my life, The adrenaline rush of violence and chaos was so romantic that it made cry, and after that experiences I travelled to other places such as The Bermuda Triangle, The Great Wall of China, I also visited the Eiffel Tower where I thought Romance but unfortunately it was short lived.</p>
+          <p>In summary, I started Adventuria to document my fun travel experiences and to help other travellers plan better for their trips.</p>
+        </div>
+        <div class="why__images grid">
+          <img src="./images/why-image1.svg" alt="">
+          <img src="./images/why-image2.svg" alt="">
+          <img src="./images/why-image3.svg" alt="">
+          <img src="./images/why-image4.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="buy-me-coffee">
+      <div class="container">
+        <a href="#" class="flex">
+          <p>Wanna Buy Me A Coffee?</p>
+          <img src="./images/coffee-icon.svg" alt="">
+        </a>
+      </div>
+    </section>
+
+    <section class="trending-articles">
+      <div class="container">
+        <h2>Trending <span class="clr-primary">Articles</span></h2>
+        <div class="trending-articles__articles flex">
+          <article class="trending-article">
+            <img src="./images/trending-article-zoo.svg" alt="">
+            <div class="trending-article__text">
+              <div class="trending-article__title flex">
+                <h3 class="fs-medium">You Need To Visit These South  African Zoos </h3>
+                <p>25th July, 2023</p>
+              </div>
+              <div class="trending-article__tags flex">
+                <p>Trending</p>
+                <p>Africa</p>
+                <p>Wildlife</p>
+              </div>
+            </div>
+            <a href="#" class="btn trending-article__btn">Read More</a>
+          </article>
+
+          <article class="trending-article">
+            <img src="./images/trending-article-north-africa.svg" alt="">
+            <div class="trending-article__text">
+              <div class="trending-article__title flex">
+                <h3 class="fs-medium">Top 10 Cities To Visit In North Africa.</h3>
+                <p>25th July, 2023</p>
+              </div>
+              <div class="trending-article__tags flex">
+                <p>Trending</p>
+                <p>Africa</p>
+                <p>Wildlife</p>
+              </div>
+            </div>
+            <a href="#" class="btn trending-article__btn">Read More</a>
+          </article>
+        </div>
+        <div>
+          <a href="#" class="btn trending-articles__btn">See All Articles</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section class="subscribe">
+      <div class="container">
+        <div class="subscribe__text">
+          <h2>Stay Up To Date To Latest Articles</h2>
+          <p>Stay updated for more exciting updates, travel guides, and heartwarming tales from around the globe by subscribing to our newsletter.</p>
+        </div>
+        <form class="subscribe__form flex">
+          <input type="text" placeholder="Email Address">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="container">
+        <img src="./images/adventuria-logo.svg" alt="">
+        <nav class="footer__nav">
+          <ul class="flex">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="index.html">Travel Destination</a>
+            </li>
+            <li>
+              <a href="index.html">Travel Resources</a>
+            </li>
+            <li>
+              <a href="index.html">About Me</a>
+            </li>
+            <li>
+              <a href="index.html">Faq</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__icons flex">
+          <a target="_blank" href="https://facebook.com">
+            <img src="./images/facebook-icon.svg" alt="">
+          </a>
+          <a target="_blank" href="https://instagram.com">
+            <img src="./images/instagram-icon.svg" alt="">
+          </a>
+          <a target="_blank" href="https://twitter.com">
+            <img src="./images/twitter-icon.svg" alt="">
+          </a>
+        </div>
+        <p class="copyright">Copyright ©2023 All rights reserved</p>
+        <div class="scroll-up">
+          <a href="#header">
+            <img src="./images/scroll-up-arrow.svg" alt="Scroll Up Arrow Icon">
+            <p>Scroll Up</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>
