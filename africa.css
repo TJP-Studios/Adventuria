@@ -423,4 +423,30 @@ article h3 {
 }
 
 /* Bottom Buttons */
-.bottom-buttons {}
+.bottom-buttons {
+    text-align: center;
+}
+
+.numbers {
+    margin: 5% 0;
+}
+
+.numbers button,
+.left-right button {
+    max-width: 49.333335876464844px;
+    width: 100%;
+    border-radius: 100px;
+    padding: 8px;
+    background-color: #FFFEFE;
+    border: 0.5px solid #CCC9C7;
+    margin: 1%;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1B1614;
+}
+
+.numbers .current-button {
+    background-color: #FF7035;
+    color: #FFFEFE;
+}
