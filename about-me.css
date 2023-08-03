@@ -290,7 +290,6 @@ h2 {
 
 .about-me .container.grid {
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
 }
 
 .about-me h2 {
@@ -324,7 +323,6 @@ h2 {
 
 .why .container.grid {
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
   gap: 2rem;
 }
 
