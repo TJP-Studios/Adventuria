@@ -360,6 +360,11 @@ footer {
     max-width: 624px;
     border: 1px solid #CCC9C7;
     border-radius: 8px;
+    margin: 1%;
+}
+
+.article-row {
+    justify-content: center;
 }
 
 article h3 {
