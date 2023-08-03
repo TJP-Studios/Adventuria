@@ -375,12 +375,6 @@ article h3 {
     color: #1B1614;
 }
 
-article p {
-    font-family: Helvetica;
-    font-size: 1.125rem;
-    font-weight: 400;
-}
-
 .article-heading {
     justify-content: space-between;
     align-items: center;
