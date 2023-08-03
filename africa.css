@@ -264,7 +264,7 @@ footer {
 .banner-scroll {
     position: absolute;
     left: 40%;
-    top: 15%;
+    top: 5%;
 }
 
 .banner-scroll span {
@@ -290,7 +290,7 @@ footer {
 
 .banner-button {
     position: absolute;
-    top: 15%;
+    top: 5%;
     left: 8%;
     background-color: #FFFEFE;
     padding: 1rem 1.5rem;
@@ -302,7 +302,7 @@ footer {
 .banner-arrow-right {
     position: absolute;
     top: 50%;
-    right: 10%;
+    right: 2%;
 }
 
 /* Form and Buttons */
