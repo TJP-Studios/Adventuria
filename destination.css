@@ -21,6 +21,10 @@ select {
     font: inherit;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 button {
     border: 0;
     outline: none;
@@ -162,6 +166,7 @@ footer {
 }
 
 .footer {
+    position: relative;
     padding-block: 3.5rem;
     background-color: hsla(16, 100%, 96%, 1);
 }
@@ -194,6 +199,23 @@ footer {
 
 .copyright {
     font-size: .875rem;
+}
+
+.scroll-up {
+  position: absolute;
+  bottom: 20%;
+  right: 6%;
+  text-transform: uppercase;
+}
+
+.scroll-up a {
+  display: grid;
+  gap: 1rem;
+  place-items: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: var(--fs-normal);
+  font-weight: 600;
 }
 
 /* Banner */
