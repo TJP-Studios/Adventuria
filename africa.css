@@ -431,17 +431,16 @@ article h3 {
     margin: 5% 0;
 }
 
-.numbers button,
-.left-right button {
-    max-width: 49.333335876464844px;
+.numbers button {
+    max-width: 50px;
     width: 100%;
     border-radius: 100px;
-    padding: 8px;
+    padding: 0.5rem;
     background-color: #FFFEFE;
     border: 0.5px solid #CCC9C7;
     margin: 1%;
     font-family: Helvetica;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     color: #1B1614;
 }
@@ -449,4 +448,16 @@ article h3 {
 .numbers .current-button {
     background-color: #FF7035;
     color: #FFFEFE;
+}
+
+.left-right {
+    margin-bottom: 10%;
+}
+
+.left-right button {
+    border-radius: 100px;
+    padding: 0.5rem;
+    background-color: #FFFEFE;
+    border: 0.5px solid #CCC9C7;
+    margin: 0.5%;
 }
