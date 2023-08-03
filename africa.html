@@ -6,15 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adventuria | Africa</title>
     <link rel="stylesheet" href="africa.css">
-    <link rel="shortcut icon" href="/images/adventuria-logo.svg" type="image/x-icon">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/adventuria-logo.svg" type="image/x-icon">
 </head>
 
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <div class="container">
             <nav class="header__nav flex">
                 <ul class="flex">
@@ -35,10 +31,10 @@
                 </div>
                 <ul class="flex">
                     <li>
-                        <a href="#">About Me</a>
+                        <a href="about-me.html">About Me</a>
                     </li>
                     <li>
-                        <a href="#">Faq</a>
+                        <a href="faq.html">Faq</a>
                     </li>
                     <form class="header__form flex">
                         <input type="text" placeholder="Search articles">
@@ -91,8 +87,28 @@
                 <button>Places</button>
                 <button>Latest</button>
             </div>
-
         </section>
+
+        <section class="articles">
+            <article>
+                <img src="./images/lagos.svg" alt="">
+                <div class="flex">
+                    <h3>Why You Need To Go To Lagos For Vacation.</h3>
+                    <p>25th July ,2023</p>
+                </div>
+                <div class="flex article-buttons">
+                    <button>Trending</button>
+                    <button>Africa</button>
+                    <button>Wild life</button>
+                </div>
+                <p>Lagos is blessed with stunning beaches that beckon travelers to unwind and soak up the sun. From the
+                    lively shores of Tarkwa Bay to the tranquil beauty of Elegushi Beach, there's a beach to suit every
+                    preference.Enjoy the warm waters of the Atlantic Ocean, indulge in water sports, or simply relax
+                    with a refreshing drink as the waves serenade you.</p>
+                <button>Read more</button>
+            </article>
+        </section>
+
     </main>
 
     <footer>
@@ -143,6 +159,12 @@
                     </a>
                 </div>
                 <p class="copyright">Copyright ©2023 All rights reserved</p>
+                <div class="scroll-up">
+                    <a href="#header">
+                        <img src="./images/scroll-up-arrow.svg" alt="Scroll Up Arrow Icon">
+                        <p>Scroll Up</p>
+                    </a>
+                </div>
             </div>
         </section>
     </footer>
