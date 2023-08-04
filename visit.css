@@ -340,6 +340,10 @@ footer {
 }
 
 /* Articles */
+.articles {
+    margin-bottom: 10%;
+}
+
 .article {
     max-width: 624px;
     border: 1px solid #CCC9C7;
