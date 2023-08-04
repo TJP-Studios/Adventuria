@@ -21,6 +21,10 @@ select {
     font: inherit;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 button {
     border: 0;
     outline: none;
@@ -161,6 +165,7 @@ footer {
 }
 
 .footer {
+    position: relative;
     padding-block: 3.5rem;
     background-color: hsla(16, 100%, 96%, 1);
 }
@@ -193,6 +198,23 @@ footer {
 
 .copyright {
     font-size: .875rem;
+}
+
+.scroll-up {
+    position: absolute;
+    bottom: 20%;
+    right: 6%;
+    text-transform: uppercase;
+}
+
+.scroll-up a {
+    display: grid;
+    gap: 1rem;
+    place-items: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: var(--fs-normal);
+    font-weight: 600;
 }
 
 /* Banner */
@@ -242,7 +264,7 @@ footer {
 .banner-scroll {
     position: absolute;
     left: 40%;
-    top: 15%;
+    top: 5%;
 }
 
 .banner-scroll span {
@@ -268,7 +290,7 @@ footer {
 
 .banner-button {
     position: absolute;
-    top: 15%;
+    top: 5%;
     left: 8%;
     background-color: #FFFEFE;
     padding: 1rem 1.5rem;
@@ -280,7 +302,7 @@ footer {
 .banner-arrow-right {
     position: absolute;
     top: 50%;
-    right: 10%;
+    right: 2%;
 }
 
 /* Form and Buttons */
@@ -331,4 +353,121 @@ footer {
     border-radius: 100px;
     border: 1px solid #CCC9C7;
     margin-right: 1.5%;
+}
+
+/* Articles */
+.article {
+    max-width: 624px;
+    border: 1px solid #CCC9C7;
+    border-radius: 8px;
+    margin: 1%;
+}
+
+.article-row {
+    justify-content: center;
+}
+
+article h3 {
+    max-width: 433px;
+    font-family: Miller;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1B1614;
+}
+
+.article-heading {
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+
+.article-buttons button {
+    border: 0.5px solid #CCC9C7;
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+    background-color: #FFFFFF;
+    color: #3C3938;
+    margin: 1.5%;
+    text-transform: uppercase;
+    font-family: Helvetica;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.article-paragraph {
+    font-family: Helvetica;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #3C3938;
+    padding: 2%;
+}
+
+.read-more {
+    text-align: center;
+    border-top: 1px solid #CCC9C7;
+    padding: 5% 0;
+}
+
+.read-more-button {
+    font-family: Helvetica;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #FFFEFE;
+    background-color: #FF7035;
+    padding: 1rem 1.5rem;
+    border-radius: 20px;
+    max-width: 324px;
+    width: 100%;
+    text-transform: uppercase;
+    box-shadow: 0px 13px 21px 0px #FF70354D;
+}
+
+.side-bar {
+    position: relative;
+}
+
+.scroll-bar {
+    position: relative;
+    top: 2%;
+    left: 5%;
+}
+
+/* Bottom Buttons */
+.bottom-buttons {
+    text-align: center;
+}
+
+.numbers {
+    margin: 5% 0;
+}
+
+.numbers button {
+    max-width: 50px;
+    width: 100%;
+    border-radius: 100px;
+    padding: 0.5rem;
+    background-color: #FFFEFE;
+    border: 0.5px solid #CCC9C7;
+    margin: 1%;
+    font-family: Helvetica;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1B1614;
+}
+
+.numbers .current-button {
+    background-color: #FF7035;
+    color: #FFFEFE;
+}
+
+.left-right {
+    margin-bottom: 10%;
+}
+
+.left-right button {
+    border-radius: 100px;
+    padding: 0.5rem;
+    background-color: #FFFEFE;
+    border: 0.5px solid #CCC9C7;
+    margin: 0.5%;
 }

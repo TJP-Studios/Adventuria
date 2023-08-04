@@ -34,7 +34,6 @@ button {
 body {
     font-family: "Helvetica", sans-serif;
     font-size: 1.125rem;
-    line-height: 1.5rem;
     color: #3C3938;
 }
 
@@ -202,20 +201,20 @@ footer {
 }
 
 .scroll-up {
-  position: absolute;
-  bottom: 20%;
-  right: 6%;
-  text-transform: uppercase;
+    position: absolute;
+    bottom: 20%;
+    right: 6%;
+    text-transform: uppercase;
 }
 
 .scroll-up a {
-  display: grid;
-  gap: 1rem;
-  place-items: center;
-  text-decoration: none;
-  color: inherit;
-  font-size: var(--fs-normal);
-  font-weight: 600;
+    display: grid;
+    gap: 1rem;
+    place-items: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: var(--fs-normal);
+    font-weight: 600;
 }
 
 /* Banner */
