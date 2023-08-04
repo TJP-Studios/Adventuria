@@ -365,19 +365,6 @@ article h3 {
     padding: 2%;
 }
 
-.article-buttons button {
-    border: 0.5px solid #CCC9C7;
-    padding: 0.5rem 1rem;
-    border-radius: 100px;
-    background-color: #FFFFFF;
-    color: #3C3938;
-    margin: 1.5%;
-    text-transform: uppercase;
-    font-family: Helvetica;
-    font-size: 0.875rem;
-    font-weight: 400;
-}
-
 .article-paragraph {
     font-family: Helvetica;
     font-size: 1.125rem;
