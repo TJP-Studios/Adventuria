@@ -422,6 +422,16 @@ article h3 {
     box-shadow: 0px 13px 21px 0px #FF70354D;
 }
 
+.side-bar {
+    position: relative;
+}
+
+.scroll-bar {
+    position: relative;
+    top: 2%;
+    left: 5%;
+}
+
 /* Bottom Buttons */
 .bottom-buttons {
     text-align: center;
