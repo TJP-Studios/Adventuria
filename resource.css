@@ -34,7 +34,6 @@ button {
 body {
     font-family: "Helvetica", sans-serif;
     font-size: 1.125rem;
-    line-height: 1.5rem;
     color: #3C3938;
 }
 
@@ -311,16 +310,7 @@ footer {
 }
 
 .body-buttons {
-    flex-direction: column;
-    margin: 0 23%;
-}
-
-.body-buttons .row1 {
-    margin-bottom: 2%;
-}
-
-.body-buttons .row2 {
-    margin-bottom: 8%;
+    justify-content: center;
 }
 
 .body-buttons button {
@@ -436,7 +426,8 @@ article h3 {
     color: #1B1614;
 }
 
-.numbers .current-button {
+.numbers .current-button,
+.body-buttons .current-button {
     background-color: #FF7035;
     color: #FFFEFE;
 }
