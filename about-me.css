@@ -261,6 +261,7 @@ h2 {
   position: relative;
   display: grid;
   place-items: center;
+  min-height: 100vh;
   min-height: 100svh;
   background-image: url("./images/about-me-bg.svg");
   background-repeat: no-repeat;
