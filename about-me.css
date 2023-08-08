@@ -12,7 +12,7 @@
   :root {
     --fs-xlarge: 2.5rem;
     --fs-large: 2rem;
-    --fs-medium: 1.25rem;
+    --fs-medium: 1.5rem;
     --fs-normal: 1rem;
     --fs-small: .875rem;
   }
@@ -475,6 +475,7 @@ h2 {
 
 .trending-article__title {
   justify-content: space-between;
+  gap: .5rem;
 }
 
 .trending-article__text p {
@@ -519,6 +520,16 @@ h2 {
   .trending-article__tags p {
     font-size: .75rem;
     padding: .5rem .7rem;
+  }
+}
+
+@media (max-width: 30em) {
+  .trending-article {
+    box-shadow: none;
+  }
+
+  .trending-article__title h3 {
+    max-width: 10.5rem;
   }
 }
 
