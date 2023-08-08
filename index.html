@@ -185,10 +185,18 @@
           </div>
         </div>
         <div class="swiper-button-next">
-          <img src="./images/swiper-next.svg" alt="">
+          <picture class="resources__image">
+            <source media='(max-width: 768px)'
+                    srcset='./images/swiper-next-mobile.svg'/>
+            <img src='./images/swiper-next.svg'/>
+          </picture>
         </div>
         <div class="swiper-button-prev">
-          <img src="./images/swiper-previous.svg" alt="">
+          <picture class="resources__image">
+            <source media='(max-width: 768px)'
+                    srcset='./images/swiper-previous-mobile.svg'/>
+            <img src='./images/swiper-previous.svg'/>
+          </picture>
         </div>
       </div>
     </section>

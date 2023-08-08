@@ -380,7 +380,7 @@ h1 {
   .swiper-button-next,
   .swiper-button-prev {
     position: absolute;
-    bottom: 10vw;
+    top: 80vh;
   }
 
   .swiper .progress-bar {
