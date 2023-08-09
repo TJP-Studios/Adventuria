@@ -12,42 +12,54 @@
 <body>
     <header id="header" class="header">
         <div class="container">
-            <nav class="header__nav flex">
-                <ul class="flex">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a class="current" href="destination.html">Travel Destination</a>
-                    </li>
-                    <li>
-                        <a href="resource.html">Travel Resources</a>
-                    </li>
-                </ul>
-                <div>
-                    <a href="index.html">
-                        <img src="./images/adventuria-logo.svg" alt="">
-                    </a>
-                </div>
-                <ul class="flex">
-                    <li>
-                        <a href="about-me.html">About Me</a>
-                    </li>
-                    <li>
-                        <a href="faq.html">Faq</a>
-                    </li>
-                    <form class="header__form flex">
-                        <input type="text" placeholder="Search articles">
-                        <button>
-                            <img src="./images/search-icon.svg" alt="">
-                        </button>
-                    </form>
-                </ul>
-            </nav>
+          <nav class="header__nav flex" data-visible="false">
+            <ul class="flex">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a class="current" href="destination.html">Travel Destination</a>
+              </li>
+              <li>
+                <a href="resource.html">Travel Resources</a>
+              </li>
+            </ul>
+            <div>
+              <a href="index.html">
+                <img src="./images/adventuria-logo.svg" alt="">
+              </a>
+            </div>
+            <ul class="flex">
+              <li>
+                <a href="about-me.html">About Me</a>
+              </li>
+              <li>
+                <a href="faq.html">Faq</a>
+              </li>
+              <form class="header__form flex">
+                <input type="text" placeholder="Search articles...">
+                <button>
+                  <img src="./images/search-icon.svg" alt="">
+                </button>
+              </form>
+            </ul>
+          </nav>
+          <nav class="mobile-nav flex">
+            <img src="./images/adventuria-logo.svg" alt="Adventuria logo">
+            <ul>
+              <li>
+                <a class="current" href="index.html">Travel Destination</a>
+              </li>
+            </ul>
+            <button class="mobile-nav__toggle" aria-expanded="false">
+              <span></span>
+              <span></span>
+            </button>
+          
         </div>
-    </header>
+      </header>
 
-    <main>
+    <!-- <main>
         <section class="banner">
             <img src="./images/top.png" alt="" class="banner-img">
             <p class="banner-text">Travel Destination.</p>
@@ -108,6 +120,79 @@
                     <img src="./images/south-america.png" alt="">
                     <h4>South America</h4>
                     <button>Explore</button>
+                </div>
+            </div>
+        </section>
+    </main> -->
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Travel Destination</h1>
+                <div class="mouse-scroll">
+                    <button>
+                      <a href="#destinations"><img src="./images/mouse-scroll.svg" alt=""></a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="destinations" class="destinations">
+            <div class="container">
+                <div class="destinations__intro">
+                    <h2>Pick A Continent To <span>Explore.</span></h2>
+                    <p>Uncover the beauty and diversity of global cultures and gain insightful pieces while I take you on a voyage of discovery and understanding.</p>
+                </div>
+                <div class="destination__grid">
+                    <div class="destination">
+                        <img class="destination__img" src="./images/africa.png" alt="Africa">
+                        <div class="destination__text">
+                            <p>Africa</p>
+                            <a href="africa.html" class="btn destination__btn">Explore</a>
+                        </div>
+                    </div>
+                    <div class="destination">
+                        <img class="destination__img" src="./images/europe.png" alt="Europe">
+                        <div class="destination__text">
+                            <p>Europe</p>
+                            <a href="africa.html" class="btn destination__btn">Explore</a>
+                        </div>
+                    </div>
+                    <div class="destination">
+                        <img class="destination__img" src="./images/asia.png" alt="Asia">
+                        <div class="destination__text">
+                            <p>Asia</p>
+                            <a href="africa.html" class="btn destination__btn">Explore</a>
+                        </div>
+                    </div>
+                    <div class="destination">
+                        <img class="destination__img" src="./images/antartica.png" alt="Antartica">
+                        <div class="destination__text">
+                            <p>Antartica</p>
+                            <a href="africa.html" class="btn destination__btn">Explore</a>
+                        </div>
+                    </div>
+                    <div class="destination">
+                        <img class="destination__img" src="./images/oceania.png" alt="Oceania">
+                        <div class="destination__text">
+                            <p>Oceania</p>
+                            <a href="africa.html" class="btn destination__btn">Explore</a>
+                        </div>
+                    </div>
+                    <div class="destination">
+                        <img class="destination__img" src="./images/south-america.png" alt="South America">
+                        <div class="destination__text">
+                            <p>South America</p>
+                            <a href="africa.html" class="btn destination__btn">Explore</a>
+                        </div>
+                    </div>
+                    <div class="destination">
+                        <img class="destination__img" src="./images/north-america.png" alt="North America">
+                        <div class="destination__text">
+                            <p>North America</p>
+                            <a href="africa.html" class="btn destination__btn">Explore</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
