@@ -276,6 +276,10 @@ h1 {
   .mobile-nav {
     display: flex;
   }
+
+  .no-scroll {
+    overflow: hidden;
+  }
 }
 
 /* Hero */

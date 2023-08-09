@@ -1,5 +1,6 @@
-const nav = document.querySelector(".header__nav");
-const navToggle = document.querySelector(".mobile-nav__toggle");
+const body = document.querySelector("body");
+const nav = body.querySelector(".header__nav");
+const navToggle = body.querySelector(".mobile-nav__toggle");
 
 function handleNavToggleClick() {
   const isVisible = nav.getAttribute("data-visible");
@@ -10,6 +11,7 @@ function handleNavToggleClick() {
     nav.setAttribute("data-visible", "false");
     navToggle.setAttribute("aria-expanded", "false");
   }
+  body.classList.toggle("no-scroll");
 }
 
 navToggle.addEventListener("click", handleNavToggleClick);
