@@ -351,6 +351,12 @@ h2 {
   }
 }
 
+@media (max-width: 25em) {
+  .about-me__intro--mobile h2 {
+    font-size: 1.65rem;
+  }
+}
+
 /* Why */
 .why {
   margin-block: 5rem;
@@ -359,6 +365,10 @@ h2 {
 .why .container.grid {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+}
+
+.why__carousel {
+  display: none;
 }
 
 .why__title--mobile {
@@ -393,14 +403,54 @@ h2 {
   }
 
   .why__images {
-    gap: 0;
-    order: 1;
-    margin-inline: auto;
+    display: none;
   }
 
   .why__text {
     order: 2;
   }
+
+  .why__carousel {
+    position: relative;
+    display: block;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+    padding-block: 1rem 3rem;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-slide {
+    width: 45%;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: hsla(17, 100%, 58%, 1);
+  }
+  /* .swiper-slide:nth-child(2n) {
+    width: 60%;
+  }
+
+  .swiper-slide:nth-child(3n) {
+    width: 40%;
+  } */
 }
 
 /* Buy Me Coffee */
@@ -630,10 +680,6 @@ footer {
   text-align: center;
 }
 
-.footer__nav  li:nth-child(5) {
-  margin-inline: auto;
-}
-
 .footer__nav a {
   font-size: var(--fs-small);
   text-transform: uppercase;
@@ -669,4 +715,11 @@ footer {
   color: inherit;
   font-size: var(--fs-normal);
   font-weight: 600;
+}
+
+@media (max-width: 25em) {
+  .footer__nav  li:nth-child(5) {
+    margin-inline: auto;
+    width: 100%;
+  }
 }

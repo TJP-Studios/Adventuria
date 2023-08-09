@@ -90,6 +90,25 @@
     <section class="why">
       <div class="container grid">
         <h2 class="why__title--mobile">Why I Started <span class="clr-primary">Adventuria</span></h2>
+        <div class="why__carousel">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src='./images/why-image1-mobile.svg'/>
+              </div>
+              <div class="swiper-slide">
+                <img src='./images/why-image2-mobile.svg'/>
+              </div>
+              <div class="swiper-slide">
+                <img src='./images/why-image3-mobile.svg'/>
+              </div>
+              <div class="swiper-slide">
+                <img src='./images/why-image4-mobile.svg'/>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
         <div class="why__text">
           <h2 class="why__title--desktop">Why I Started <span class="clr-primary">Adventuria</span></h2>
           <p>I started Adventuria due to the fact that I felt alone after consuming a nasty breakfast from my ex-boyfriend. I was fresh out of university, naïve and depressed about how my life sucked.</p>
@@ -237,9 +256,15 @@
   <!-- Initialize Swiper -->
   <script>
     const swiper = new Swiper(".mySwiper", {
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+      slidesPerView: "auto",
+      spaceBetween: 5,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
       },
     });
   </script>
