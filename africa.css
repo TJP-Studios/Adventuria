@@ -501,8 +501,8 @@ footer {
 
     .next-arrow {
         display: block;
-        top: 75svh;
-        top: 75vh;
+        top: 85svh;
+        top: 85vh;
         margin: 0;
     }
 
@@ -561,7 +561,25 @@ footer {
     border: 1px solid #CCC9C7;
     background-color: #FFF;
 }
+
 @media (max-width: 50em) {
+    .search-articles {
+        padding-bottom: .5rem;
+    }
+
+    .search-articles input {
+        flex-basis: 80%;
+    }
+
+    .search-articles input::placeholder {
+        font-size: .875rem;
+    }
+
+    .search-articles__form button {
+        padding-top: 4%;
+        left: -4%;
+    }
+
     .article-topics {
         overflow: scroll;
         flex-wrap: nowrap;
@@ -571,6 +589,13 @@ footer {
 
     .article-topics::-webkit-scrollbar {
         display: none;
+    }
+}
+
+@media (max-width: 25em) {
+    .search-articles__form button {
+        padding-top: 6%;
+        left: -5%;
     }
 }
 
