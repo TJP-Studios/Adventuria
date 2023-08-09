@@ -316,4 +316,8 @@ main {
     font-size: 10rem;
     top: 15%;
   }
+
+  .oops__buttons .btn:first-child {
+    display: none;
+  }
 }
