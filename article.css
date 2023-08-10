@@ -482,3 +482,46 @@ footer {
     font-size: var(--fs-normal);
     font-weight: 600;
   }
+
+  /* @media screen and (max-width: 480px) */
+
+  @media screen and ( max-width: 480px) {
+
+    .articleSection1{
+      height: 650px;
+    }
+
+    .articleSection1 > h1{
+      padding-top: 60%;
+      font-size: 40px;
+      padding-right: 24%;
+      width: 100%;
+    }
+ 
+    .lists >li{
+      margin-top: 6%;
+    } 
+
+    .articleSection2{
+      margin-left: 7%;
+      margin-right: 5%;
+      margin-bottom: 35%;
+      margin-top: 10%;
+      width: 250px;
+    }
+
+    .articleSection2 >p{
+      width: 100%;
+    }
+
+    .articleSection2 > img{
+      width: 100%;
+      height: 165px;
+    }
+
+    
+
+    .articleSection3{
+      display: none;
+    }
+  }
