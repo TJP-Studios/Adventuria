@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventuria | Africa</title>
+    <link rel="stylesheet" href="africa.css">
+    <link rel="shortcut icon" href="./images/adventuria-logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <nav class="header__nav flex" data-visible="false">
+                <ul class="flex">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="current" href="destination.html">Travel Destination</a>
+                    </li>
+                    <li>
+                        <a href="resource.html">Travel Resources</a>
+                    </li>
+                </ul>
+                <div>
+                    <a href="index.html">
+                        <img src="./images/adventuria-logo.svg" alt="">
+                    </a>
+                </div>
+                <ul class="flex">
+                    <li>
+                        <a href="about-me.html">About Me</a>
+                    </li>
+                    <li>
+                        <a href="faq.html">Faq</a>
+                    </li>
+                    <form class="header__form flex">
+                        <input type="text" placeholder="Search articles...">
+                        <button>
+                            <img src="./images/search-icon.svg" alt="">
+                        </button>
+                    </form>
+                </ul>
+            </nav>
+            <nav class="mobile-nav flex">
+                <img src="./images/adventuria-logo.svg" alt="Adventuria logo">
+                <ul>
+                    <li>
+                        <a class="current" href="index.html">Travel Destination</a>
+                    </li>
+                </ul>
+                <button class="mobile-nav__toggle" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                </button>
+
+        </div>
+    </header>
+
+    <!-- <main>
+        <section class="banner">
+            <img src="./images/africa-banner.png" alt="" class="banner-img">
+            <a href="destination.html"><button class="banner-button"><img src="./images/arrow-left.png" alt=""> Previous
+                    page</button></a>
+            <img src="./images/arrow-right.png" alt="" class="banner-arrow-right">
+            <div class=" banner-scroll">
+                <div class="scroller"><span class="orange-text">01</span>
+                    <img src="./images/scroll-line-orange.png" alt=""><img src="./images/scroll-line-white.png" alt="">
+                    <span>07</span>
+                </div>
+                <p>Africa</p>
+            </div>
+
+            <p class="banner-text">Discover The Hidden Gems Of Africa.</p>
+            <img src="./images/arrow-down.png" alt="" class="banner-arrow">
+            <img src="./images/mini-mouse.png" alt="" class="banner-mouse">
+        </section>
+
+        <form class="body-form flex">
+            <input type="text" placeholder="Search articles, keywords...">
+            <button>
+                <img src="./images/search-icon.svg" alt="">
+            </button>
+        </form>
+
+        <section class="body-buttons flex">
+            <div class="row1">
+                <button>westafrica</button>
+                <button>central africa</button>
+                <button>south africa</button>
+                <button>north africa</button>
+                <button>culture</button>
+            </div>
+            <div class="row2">
+                <button>Food</button>
+                <button>lifestyle</button>
+                <button>Attractions</button>
+                <button>Places</button>
+                <button>Latest</button>
+            </div>
+        </section>
+
+        <section class="articles">
+            <div class="flex article-row">
+                <article class="article">
+                    <img src="./images/lagos.svg" alt="">
+                    <div class="flex article-heading">
+                        <h3>Why You Need To Go To Lagos For Vacation.</h3>
+                        <p>25th July ,2023</p>
+                    </div>
+                    <div class="flex article-buttons">
+                        <button>Trending</button>
+                        <button>Africa</button>
+                        <button>Wild life</button>
+                    </div>
+                    <p class="article-paragraph">Lagos is blessed with stunning beaches that beckon travelers to unwind
+                        and
+                        soak up the sun. From the
+                        lively shores of Tarkwa Bay to the tranquil beauty of Elegushi Beach, there's a beach to suit
+                        every
+                        preference.Enjoy the warm waters of the Atlantic Ocean, indulge in water sports, or simply relax
+                        with a refreshing drink as the waves serenade you.</p>
+                    <div class="read-more">
+                        <button class="read-more-button">Read more</button>
+                    </div>
+                </article>
+                <article class="article">
+                    <img src="./images/north-africa.svg" alt="">
+                    <div class="flex article-heading">
+                        <h3>10 Cities To Visit In North Africa.</h3>
+                        <p>25th July ,2023</p>
+                    </div>
+                    <div class="flex article-buttons">
+                        <button>Trending</button>
+                        <button>Africa</button>
+                        <button>Wild life</button>
+                    </div>
+                    <p class="article-paragraph">
+                        North Africa is a region steeped in history, culture, and natural beauty, offering a diverse
+                        range of experiences for intrepid travelers. From the bustling markets of Marrakech in Morocco
+                        to the ancient ruins of Carthage in Tunisia, here are 10 captivating cities that should be on
+                        your travel radar.
+                    </p>
+                    <div class="read-more">
+                        <a href="article.html"><button class="read-more-button">Read more</button></a>
+                    </div>
+                </article>
+                <div class="side-bar"><img src="./images/scroll-bar.svg" alt="" class="scroll-bar"></div>
+            </div>
+
+
+
+            <div class="flex article-row">
+                <article class="article">
+                    <img src="./images/tech-hub.svg" alt="">
+                    <div class="flex article-heading">
+                        <h3>The Tech Hub Of Africa Should Be On Your Travel List</h3>
+                        <p>25th July ,2023</p>
+                    </div>
+                    <div class="flex article-buttons">
+                        <button>Trending</button>
+                        <button>Africa</button>
+                        <button>Wild life</button>
+                    </div>
+                    <p class="article-paragraph">With a vibrant startup scene, world-class tech conferences, and a
+                        thriving innovation ecosystem, this destination offers an unparalleled opportunity to witness
+                        the future unfold. Embrace the spirit of innovation and add the Tech Hub of Africa to your
+                        travel list for a journey that will inspire and amaze.</p>
+                    <div class="read-more">
+                        <button class="read-more-button">Read more</button>
+                    </div>
+                </article>
+                <article class="article">
+                    <img src="./images/zoo.svg" alt="">
+                    <div class="flex article-heading">
+                        <h3>You Need To Visit These South African Zoos </h3>
+                        <p>25th July ,2023</p>
+                    </div>
+                    <div class="flex article-buttons">
+                        <button>Trending</button>
+                        <button>Africa</button>
+                        <button>Wild life</button>
+                    </div>
+                    <p class="article-paragraph">From the world-renowned Kruger National Park to the family-friendly
+                        Johannesburg Zoo, each destination promises an unforgettable experience with the animal kingdom.
+                        Embark on a journey to these South African zoos and let the magic of the wild captivate your
+                        heart.</p>
+                    <div class="read-more">
+                        <button class="read-more-button">Read more</button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="flex article-row">
+                <article class="article">
+                    <img src="./images/food.svg" alt="">
+                    <div class="flex article-heading">
+                        <h3>Top 10 Foods To Try Out In Nigeria.</h3>
+                        <p>25th July ,2023</p>
+                    </div>
+                    <div class="flex article-buttons">
+                        <button>Trending</button>
+                        <button>Africa</button>
+                        <button>Wild life</button>
+                    </div>
+                    <p class="article-paragraph">From the spicy allure of jollof rice to the savory goodness of suya,
+                        the country boasts a myriad of delectable dishes to try. Embrace the taste of Nigeria as you
+                        savor these top 10 foods, each a delightful expression of the nation's vibrant culture and
+                        culinary artistry.</p>
+                    <div class="read-more">
+                        <button class="read-more-button">Read more</button>
+                    </div>
+                </article>
+                <article class="article">
+                    <img src="./images/sahara.svg" alt="">
+                    <div class="flex article-heading">
+                        <h3>I Visited The Sahara And It Wasn't As bad As I Thought.</h3>
+                        <p>25th July ,2023</p>
+                    </div>
+                    <div class="flex article-buttons">
+                        <button>Trending</button>
+                        <button>Africa</button>
+                        <button>Wild life</button>
+                    </div>
+                    <p class="article-paragraph">Unveiling the Sahara: A Surprisingly Pleasant Experience
+                        Venturing into the Sahara Desert can be a daunting idea, with visions of scorching heat and
+                        relentless sandstorms. However, my recent visit shattered these preconceptions as I discovered a
+                        mesmerizing landscape of tranquility and awe-inspiring beauty.</p>
+                    <div class="read-more">
+                        <button class="read-more-button">Read more</button>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+
+        <section class="bottom-buttons">
+            <div class="numbers">
+                <button><img src="./images/double-left.svg" alt=""></button>
+                <button class="current-button">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>...</button>
+                <button>5</button>
+                <button><img src="./images/double-right.svg" alt=""></button>
+            </div>
+            <div class="left-right">
+                <button><img src="./images/arrow-left-grey.svg" alt=""></button>
+                <button><img src="./images/arrow-right-orange.svg" alt=""></button>
+            </div>
+        </section>
+    </main> -->
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="progress-bar">
+                    <img src="./images/progress-bar-africa.svg" alt="">
+                    <p>Africa</p>
+                </div>
+                <h1>Discover The Hidden Gems Of Africa.</h1>
+                <div class="mouse-scroll">
+                    <button>
+                        <a href="#search-articles"><img src="./images/mouse-scroll.svg" alt=""></a>
+                    </button>
+                </div>
+                <picture class="next-arrow">
+                    <source media='(max-width: 768px)' srcset='./images/swiper-next-mobile.svg' />
+                    <img src='./images/swiper-next.svg' />
+                </picture>
+                <div class="go-back">
+                    <a href="destination.html" class="btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12" fill="none">
+                            <path
+                                d="M17 6.00008C17 6.00008 7.24839 6.00008 1 6.00008M1 6.00008C3.80799 7.077 5.30769 10.3078 5.30769 10.3078M1 6.00008C3.53876 5.51324 5.30769 1.69238 5.30769 1.69238"
+                                stroke="#FF7035" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>Previous Page</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="search-articles" class="search-articles">
+            <div class="container">
+                <form class="search-articles__form">
+                    <input type="text" placeholder="Search articles, keywords...">
+                    <button type="submit">
+                        <img src="./images/search-icon.svg" alt="">
+                    </button>
+                </form>
+                <div class="article-topics">
+                    <p>West Africa</p>
+                    <p>Central Africa</p>
+                    <p>South Africa</p>
+                    <p>North Africa</p>
+                    <p>Culture</p>
+                    <p>Food</p>
+                    <p>Lifestyle</p>
+                    <p>Attractions</p>
+                    <p>Places</p>
+                    <p>Latest</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="articles">
+            <div class="container">
+                <div class="articles__grid">
+                    <article class="article">
+                        <picture>
+                            <source media='(max-width: 390px)' srcset='./images/lagos-mobile.svg' />
+                            <img src='./images/lagos.svg' />
+                        </picture>
+                        <div class="article__info">
+                            <div class="article__info-top">
+                                <div class="article__title">
+                                    <h2>Why You Need To Go To Lagos For Vacation.</h2>
+                                    <p>25th July ,2023</p>
+                                </div>
+                                <div class="article__tags">
+                                    <p>Trending</p>
+                                    <p>Africa</p>
+                                    <p>Wild Life</p>
+                                </div>
+                                <p>Lagos is blessed with stunning beaches that beckon travelers to unwind and soak up
+                                    the sun. From the lively shores of Tarkwa Bay to the tranquil beauty of Elegushi
+                                    Beach, there's a beach to suit every preference.Enjoy the warm waters of the
+                                    Atlantic Ocean, indulge in water sports, or simply relax with a refreshing drink as
+                                    the waves serenade you.</p>
+                            </div>
+                            <hr>
+                            <div class="article__info-bottom">
+                                <a href="article.html" class="btn article__btn">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <picture>
+                            <source media='(max-width: 390px)' srcset='./images/north-africa-mobile.svg' />
+                            <img src='./images/north-africa.svg' />
+                        </picture>
+                        <div class="article__info">
+                            <div class="article__info-top">
+                                <div class="article__title">
+                                    <h2>10 Cities To Visit In North Africa.</h2>
+                                    <p>25th July ,2023</p>
+                                </div>
+                                <div class="article__tags">
+                                    <p>Trending</p>
+                                    <p>Africa</p>
+                                    <p>Wild Life</p>
+                                </div>
+                                <p>North Africa is a region steeped in history, culture, and natural beauty, offering a
+                                    diverse range of experiences for intrepid travelers. From the bustling markets of
+                                    Marrakech in Morocco to the ancient ruins of Carthage in Tunisia, here are 10
+                                    captivating cities that should be on your travel radar.</p>
+                            </div>
+                            <hr>
+                            <div class="article__info-bottom">
+                                <a href="article.html" class="btn article__btn">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <picture>
+                            <source media='(max-width: 390px)' srcset='./images/tech-hub-mobile.svg' />
+                            <img src='./images/tech-hub.svg' />
+                        </picture>
+                        <div class="article__info">
+                            <div class="article__info-top">
+                                <div class="article__title">
+                                    <h2>The Tech Hub Of Africa Should Be On Your Travel List</h2>
+                                    <p>25th July ,2023</p>
+                                </div>
+                                <div class="article__tags">
+                                    <p>Trending</p>
+                                    <p>Africa</p>
+                                    <p>Wild Life</p>
+                                </div>
+                                <p>With a vibrant startup scene, world-class tech conferences, and a thriving innovation
+                                    ecosystem, this destination offers an unparalleled opportunity to witness the future
+                                    unfold. Embrace the spirit of innovation and add the Tech Hub of Africa to your
+                                    travel list for a journey that will inspire and amaze.</p>
+                            </div>
+                            <hr>
+                            <div class="article__info-bottom">
+                                <a href="article.html" class="btn article__btn">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <picture>
+                            <source media='(max-width: 390px)' srcset='./images/zoo-mobile.svg' />
+                            <img src='./images/zoo.svg' />
+                        </picture>
+                        <div class="article__info">
+                            <div class="article__info-top">
+                                <div class="article__title">
+                                    <h2>You Need To Visit These South African Zoos </h2>
+                                    <p>25th July ,2023</p>
+                                </div>
+                                <div class="article__tags">
+                                    <p>Trending</p>
+                                    <p>Africa</p>
+                                    <p>Wild Life</p>
+                                </div>
+                                <p>From the world-renowned Kruger National Park to the family-friendly Johannesburg Zoo,
+                                    each destination promises an unforgettable experience with the animal kingdom.
+                                    Embark on a journey to these South African zoos and let the magic of the wild
+                                    captivate your heart.</p>
+                            </div>
+                            <hr>
+                            <div class="article__info-bottom">
+                                <a href="article.html" class="btn article__btn">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <picture>
+                            <source media='(max-width: 390px)' srcset='./images/food-mobile.svg' />
+                            <img src='./images/food.svg' />
+                        </picture>
+                        <div class="article__info">
+                            <div class="article__info-top">
+                                <div class="article__title">
+                                    <h2>Top 10 Foods To Try Out In Nigeria.</h2>
+                                    <p>25th July ,2023</p>
+                                </div>
+                                <div class="article__tags">
+                                    <p>Trending</p>
+                                    <p>Africa</p>
+                                    <p>Wild Life</p>
+                                </div>
+                                <p>From the spicy allure of jollof rice to the savory goodness of suya, the country
+                                    boasts a myriad of delectable dishes to try. Embrace the taste of Nigeria as you
+                                    savor these top 10 foods, each a delightful expression of the nation's vibrant
+                                    culture and culinary artistry.</p>
+                            </div>
+                            <hr>
+                            <div class="article__info-bottom">
+                                <a href="article.html" class="btn article__btn">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <picture>
+                            <source media='(max-width: 390px)' srcset='./images/sahara-mobile.svg' />
+                            <img src='./images/sahara.svg' />
+                        </picture>
+                        <div class="article__info">
+                            <div class="article__info-top">
+                                <div class="article__title">
+                                    <h2>I Visited The Sahara And It Was'nt As bad As I Thought.</h2>
+                                    <p>25th July ,2023</p>
+                                </div>
+                                <div class="article__tags">
+                                    <p>Trending</p>
+                                    <p>Africa</p>
+                                    <p>Wild Life</p>
+                                </div>
+                                <p>Unveiling the Sahara: A Surprisingly Pleasant Experience
+                                    Venturing into the Sahara Desert can be a daunting idea, with visions of scorching
+                                    heat and relentless sandstorms. However, my recent visit shattered these
+                                    preconceptions as I discovered a mesmerizing landscape of tranquility and
+                                    awe-inspiring beauty.</p>
+                            </div>
+                            <hr>
+                            <div class="article__info-bottom">
+                                <a href="article.html" class="btn article__btn">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="articles__pagination-container">
+                    <div class="articles__pagination">
+                        <a href="#" class="pagination">
+                            <img src="./images/left-arrow-pagination.svg" alt="">
+                        </a>
+                        <a href="#" class="pagination current">1</a>
+                        <a href="#" class="pagination">2</a>
+                        <a href="#" class="pagination">3</a>
+                        <a href="#" class="pagination">...</a>
+                        <a href="#" class="pagination">5</a>
+                        <a href="#" class="pagination">
+                            <img src="./images/right-arrow-pagination.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="articles__pagination-arrows">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                            <g opacity="0.7">
+                              <circle cx="28" cy="28" r="27.75" transform="matrix(-1 0 0 1 56 0)" fill="#FCFCFC" stroke="#CCC9C7" stroke-width="0.5"/>
+                              <path d="M37.916 28.2308C37.916 28.2308 26.1836 28.2308 18.666 28.2308M18.666 28.2308C22.0444 29.4553 23.8487 33.1286 23.8487 33.1286M18.666 28.2308C21.7205 27.6773 23.8487 23.333 23.8487 23.333" stroke="#CCC9C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                            <circle cx="28" cy="28" r="27.75" fill="#FCFCFC" stroke="#CCC9C7" stroke-width="0.5"/>
+                            <path d="M18.084 28.2308C18.084 28.2308 29.8164 28.2308 37.334 28.2308M37.334 28.2308C33.9556 29.4553 32.1513 33.1286 32.1513 33.1286M37.334 28.2308C34.2795 27.6773 32.1513 23.333 32.1513 23.333" stroke="#FF7035" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="subscribe">
+            <div class="container">
+                <div class="subscribe__text">
+                    <h2>Stay Up To Date To Latest Articles</h2>
+                    <p>Stay updated for more exciting updates, travel guides, and heartwarming tales from around the
+                        globe by subscribing to our news letter.</p>
+                </div>
+                <form class="subscribe__form flex">
+                    <input type="text" placeholder="Email Address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container">
+                <img src="./images/adventuria-logo.svg" alt="">
+                <nav class="footer__nav">
+                    <ul class="flex">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Travel Destination</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Travel Resources</a>
+                        </li>
+                        <li>
+                            <a href="index.html">About Me</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Faq</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__icons flex">
+                    <a target="_blank" href="https://facebook.com">
+                        <img src="./images/facebook-icon.svg" alt="">
+                    </a>
+                    <a target="_blank" href="https://instagram.com">
+                        <img src="./images/instagram-icon.svg" alt="">
+                    </a>
+                    <a target="_blank" href="https://twitter.com">
+                        <img src="./images/twitter-icon.svg" alt="">
+                    </a>
+                </div>
+                <p class="copyright">Copyright ©2023 All rights reserved</p>
+                <div class="scroll-up">
+                    <a href="#header">
+                        <img src="./images/scroll-up-arrow.svg" alt="Scroll Up Arrow Icon">
+                        <p>Scroll Up</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
