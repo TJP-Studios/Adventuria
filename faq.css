@@ -569,31 +569,41 @@ footer {
   @media screen and (max-width: 480px) {
     .faqSection1{
       height: 650px;
-      /* width: 390px; */
+      width: 400px;  
       padding-top: 90px;
     }
 
     .faqSection1 > h1{
       font-size: 40px;
+      padding-top: 50%;
     }
 
     .faqSection2{
-      width: 300px;
-      margin: 0px 16px;
+      width: 380px; 
+      margin: 15% 7%;
+      border: none;
       /* font-size: 20px; */
     }
 
     .faqSection3{
-      width: 300px;
-      margin: 0px 16px;
+      /* width: 300px; */
+      margin: 0px 7%;
+      margin-bottom: 15%;
       /* font-size: 20px; */
     }
     .faqSection3 > h1{
-      font-size: 30px;
+      font-size: 25px;
       width: 100%;
+      /* margin-bottom: 3%; */
     }
-    .faqSection3 > form{
-      width: 100%;
+    input, textarea{
+      /* margin-right: 20%; */
+      width: 100%;  
+    }
+
+    .faqSection3 > button{
+    
+      margin-left: 50%;
     }
     
   }
