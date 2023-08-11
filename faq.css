@@ -569,7 +569,7 @@ footer {
   @media screen and (max-width: 480px) {
     .faqSection1{
       height: 650px;
-      width: 400px;  
+      /* width: 40px;   */
       padding-top: 90px;
     }
 
@@ -579,7 +579,7 @@ footer {
     }
 
     .faqSection2{
-      width: 380px; 
+      width: 90%; 
       margin: 15% 7%;
       border: none;
       /* font-size: 20px; */
@@ -591,10 +591,10 @@ footer {
       margin-bottom: 15%;
       /* font-size: 20px; */
     }
-    .faqSection3 > h1{
+    .faqSection3 > p{
       font-size: 25px;
       width: 100%;
-      /* margin-bottom: 3%; */
+      padding-bottom: 5%; 
     }
     input, textarea{
       /* margin-right: 20%; */
