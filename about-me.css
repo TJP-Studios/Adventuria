@@ -12,7 +12,7 @@
   :root {
     --fs-xlarge: 2.5rem;
     --fs-large: 2rem;
-    --fs-medium: 1.25rem;
+    --fs-medium: 1.5rem;
     --fs-normal: 1rem;
     --fs-small: .875rem;
   }
@@ -226,6 +226,7 @@ h2 {
   height: .2rem;
   border-radius: .5rem;
   background-color: #1B1614;
+  transition: transform 100ms ease-out;
 }
 
 .mobile-nav__toggle span:nth-child(1) {
@@ -237,7 +238,7 @@ h2 {
 }
 
 .mobile-nav__toggle[aria-expanded="true"] span:nth-child(2) {
-  transform: rotate(-45deg) translate(2px, -3px);
+  transform: rotate(-45deg) translate(1px, -3px);
 }
 
 @media (max-width: 69em) {
@@ -251,8 +252,43 @@ h2 {
     display: none;
   }
 
+  .header__nav[data-visible="true"] {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    inset: 0;
+    background-color: white;
+    z-index: 20;
+  }
+
+  .header__nav a {
+    font-size: 1rem;
+  }
+
+  .mobile-nav__toggle[aria-expanded="true"] {
+    position: fixed;
+    right: 1rem;
+    z-index: 999;
+  }
+
+  .header__nav div,
+  .header__form {
+    display: none;
+  }
+
+  .header__nav .flex {
+    flex-direction: column;
+  }
+
   .mobile-nav {
     display: flex;
+  }
+
+  .no-scroll {
+    overflow: hidden;
   }
 }
 
@@ -261,6 +297,7 @@ h2 {
   position: relative;
   display: grid;
   place-items: center;
+  min-height: 100vh;
   min-height: 100svh;
   background-image: url("./images/about-me-bg.svg");
   background-repeat: no-repeat;
@@ -290,7 +327,10 @@ h2 {
 
 .about-me .container.grid {
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+}
+
+.about-me__intro--mobile {
+  display: none;
 }
 
 .about-me h2 {
@@ -317,6 +357,42 @@ h2 {
   }
 }
 
+@media (max-width: 30em) {
+  .about-me {
+    margin-block: 2rem;
+  }
+
+  .about-me__text {
+    text-align: left;
+  }
+
+  .about-me__text h2 {
+    display: none;
+  }
+
+  .about-me__image--desktop {
+    display: none;
+  }
+
+  .about-me__image--mobile {
+    border-radius: .5rem;
+  }
+
+  .about-me__intro--mobile {
+    display: grid;
+    gap: 1.5rem;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+  }
+}
+
+@media (max-width: 25em) {
+  .about-me__intro--mobile h2 {
+    font-size: 1.65rem;
+  }
+}
+
 /* Why */
 .why {
   margin-block: 5rem;
@@ -324,21 +400,29 @@ h2 {
 
 .why .container.grid {
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
   gap: 2rem;
+}
+
+.why__carousel {
+  display: none;
+}
+
+.why__title--mobile {
+  display: none;
 }
 
 .why__text > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.why__images.grid {
+.why__images {
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 1rem;
 }
 
 @media (max-width: 70em) {
-  .why {
+  .why h2 {
     text-align: center;
   }
 
@@ -346,14 +430,63 @@ h2 {
     grid-template-columns: 1fr;
   }
 
-  .why__images.grid {
-    gap: .5rem;
-    place-items: center;
+  .why__title--mobile {
+    display: block;
+  }
+
+  .why__title--desktop {
+    display: none;
   }
 
   .why__images {
-    margin-inline: auto;
+    display: none;
   }
+
+  .why__text {
+    order: 2;
+  }
+
+  .why__carousel {
+    position: relative;
+    display: block;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+    padding-block: 1rem 3rem;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-slide {
+    width: 45%;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: hsla(17, 100%, 58%, 1);
+  }
+  /* .swiper-slide:nth-child(2n) {
+    width: 60%;
+  }
+
+  .swiper-slide:nth-child(3n) {
+    width: 40%;
+  } */
 }
 
 /* Buy Me Coffee */
@@ -428,6 +561,7 @@ h2 {
 
 .trending-article__title {
   justify-content: space-between;
+  gap: .5rem;
 }
 
 .trending-article__text p {
@@ -472,6 +606,16 @@ h2 {
   .trending-article__tags p {
     font-size: .75rem;
     padding: .5rem .7rem;
+  }
+}
+
+@media (max-width: 30em) {
+  .trending-article {
+    box-shadow: none;
+  }
+
+  .trending-article__title h3 {
+    max-width: 10.5rem;
   }
 }
 
@@ -572,10 +716,6 @@ footer {
   text-align: center;
 }
 
-.footer__nav  li:nth-child(5) {
-  margin-inline: auto;
-}
-
 .footer__nav a {
   font-size: var(--fs-small);
   text-transform: uppercase;
@@ -611,4 +751,11 @@ footer {
   color: inherit;
   font-size: var(--fs-normal);
   font-weight: 600;
+}
+
+@media (max-width: 25em) {
+  .footer__nav  li:nth-child(5) {
+    margin-inline: auto;
+    width: 100%;
+  }
 }
