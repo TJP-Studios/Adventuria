@@ -482,7 +482,7 @@ footer {
 .go-back {
     position: absolute;
     top: 10%;
-    left: 8%;
+    left: 4vw;
 }
 
 .go-back .btn {
@@ -710,9 +710,19 @@ footer {
     }
 }
 
+@media (max-width: 50em) {
+    .article {
+        max-width: 27rem;
+    }
+}
+
 @media (max-width: 35em) {
+    .article {
+        max-width: 20rem;
+    }
+
     .article h2 {
-        max-width: 11rem;
+        max-width: 10.9rem;
     }
 }
 
