@@ -628,6 +628,15 @@ footer {
     margin-bottom: 1rem;
 }
 
+.article hr {
+    width: 100vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background: #CCC9C7;
+    border: 0;
+    height: 1px;
+}
+
 .article__info-bottom {
     padding-block: 1.5rem;
     display: flex;
