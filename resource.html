@@ -12,52 +12,56 @@
 <body>
     <header id="header" class="header">
         <div class="container">
-          <nav class="header__nav flex" data-visible="false">
-            <ul class="flex">
-              <li>
-                <a href="index.html">Home</a>
-              </li>
-              <li>
-                <a href="destination.html">Travel Destination</a>
-              </li>
-              <li>
-                <a class="current" href="resource.html">Travel Resources</a>
-              </li>
-            </ul>
-            <div>
-              <a href="index.html">
-                <img src="./images/adventuria-logo.svg" alt="">
-              </a>
-            </div>
-            <ul class="flex">
-              <li>
-                <a href="about-me.html">About Me</a>
-              </li>
-              <li>
-                <a href="faq.html">Faq</a>
-              </li>
-              <form class="header__form flex">
-                <input type="text" placeholder="Search articles">
-                <button>
-                  <img src="./images/search-icon.svg" alt="">
+            <nav class="header__nav flex" data-visible="false">
+                <ul class="flex">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="destination.html">Travel Destination</a>
+                    </li>
+                    <li>
+                        <a class="current" href="resource.html">Travel Resources</a>
+                    </li>
+                </ul>
+                <div>
+                    <a href="index.html">
+                        <img src="./images/adventuria-logo.svg" alt="">
+                    </a>
+                </div>
+                <ul class="flex">
+                    <li>
+                        <a href="about-me.html">About Me</a>
+                    </li>
+                    <li>
+                        <a href="faq.html">Faq</a>
+                    </li>
+                    <form class="header__form flex">
+                        <input type="text" placeholder="Search articles">
+                        <button>
+                            <img src="./images/search-icon.svg" alt="">
+                        </button>
+                    </form>
+                </ul>
+            </nav>
+            <nav class="mobile-nav flex">
+                <div>
+                    <a href="index.html">
+                        <img src="./images/adventuria-logo.svg" alt="">
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <a class="current" href="resource.html">Travel Resources</a>
+                    </li>
+                </ul>
+                <button class="mobile-nav__toggle" aria-expanded="false">
+                    <span></span>
+                    <span></span>
                 </button>
-              </form>
-            </ul>
-          </nav>
-          <nav class="mobile-nav flex">
-            <img src="./images/adventuria-logo.svg" alt="Adventuria logo">
-            <ul>
-              <li>
-                <a class="current" href="resource.html">Travel Resources</a>
-              </li>
-            </ul>
-            <button class="mobile-nav__toggle" aria-expanded="false">
-              <span></span>
-              <span></span>
-            </button>
-          
+
         </div>
-      </header>
+    </header>
 
     <!-- <main>
         <section class="banner">
@@ -220,7 +224,7 @@
                 <h1>Travel Resources</h1>
                 <div class="mouse-scroll">
                     <button>
-                      <a href="#resources"><img src="./images/mouse-scroll.svg" alt=""></a>
+                        <a href="#resources"><img src="./images/mouse-scroll.svg" alt=""></a>
                     </button>
                 </div>
             </div>
@@ -342,7 +346,11 @@
                                     <h3>List Of Items You Need For Your Trip</h3>
                                     <p>25th July ,2023</p>
                                 </div>
-                                <p>Lagos is blessed with stunning beaches that beckon travelers to unwind and soak up the sun. From the lively shores of Tarkwa Bay to the tranquil beauty of Elegushi Beach, there's a beach to suit every preference.Enjoy the warm waters of the Atlantic Ocean, indulge in water sports, or simply relax with a refreshing drink as the waves serenade you.</p>
+                                <p>Lagos is blessed with stunning beaches that beckon travelers to unwind and soak up
+                                    the sun. From the lively shores of Tarkwa Bay to the tranquil beauty of Elegushi
+                                    Beach, there's a beach to suit every preference.Enjoy the warm waters of the
+                                    Atlantic Ocean, indulge in water sports, or simply relax with a refreshing drink as
+                                    the waves serenade you.</p>
                             </div>
                             <hr>
                             <div class="resource__info-bottom">
@@ -388,14 +396,19 @@
                     <div class="resources__pagination-arrows">
                         <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
                             <g opacity="0.7">
-                              <circle cx="28" cy="28" r="27.75" transform="matrix(-1 0 0 1 56 0)" fill="#FCFCFC" stroke="#CCC9C7" stroke-width="0.5"/>
-                              <path d="M37.916 28.2308C37.916 28.2308 26.1836 28.2308 18.666 28.2308M18.666 28.2308C22.0444 29.4553 23.8487 33.1286 23.8487 33.1286M18.666 28.2308C21.7205 27.6773 23.8487 23.333 23.8487 23.333" stroke="#CCC9C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="28" cy="28" r="27.75" transform="matrix(-1 0 0 1 56 0)" fill="#FCFCFC"
+                                    stroke="#CCC9C7" stroke-width="0.5" />
+                                <path
+                                    d="M37.916 28.2308C37.916 28.2308 26.1836 28.2308 18.666 28.2308M18.666 28.2308C22.0444 29.4553 23.8487 33.1286 23.8487 33.1286M18.666 28.2308C21.7205 27.6773 23.8487 23.333 23.8487 23.333"
+                                    stroke="#CCC9C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </g>
-                          </svg>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
-                            <circle cx="28" cy="28" r="27.75" fill="#FCFCFC" stroke="#CCC9C7" stroke-width="0.5"/>
-                            <path d="M18.084 28.2308C18.084 28.2308 29.8164 28.2308 37.334 28.2308M37.334 28.2308C33.9556 29.4553 32.1513 33.1286 32.1513 33.1286M37.334 28.2308C34.2795 27.6773 32.1513 23.333 32.1513 23.333" stroke="#FF7035" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                          </svg>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                            <circle cx="28" cy="28" r="27.75" fill="#FCFCFC" stroke="#CCC9C7" stroke-width="0.5" />
+                            <path
+                                d="M18.084 28.2308C18.084 28.2308 29.8164 28.2308 37.334 28.2308M37.334 28.2308C33.9556 29.4553 32.1513 33.1286 32.1513 33.1286M37.334 28.2308C34.2795 27.6773 32.1513 23.333 32.1513 23.333"
+                                stroke="#FF7035" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </div>
                 </div>
             </div>
