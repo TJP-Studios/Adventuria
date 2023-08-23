@@ -123,6 +123,7 @@ h2 {
 }
 
 .btn {
+    transition: box-shadow 500ms ease-out;
     border: 0;
     outline: none;
     color: inherit;
@@ -194,6 +195,7 @@ h2 {
     border: 0;
     outline: none;
     background: transparent;
+    transition: box-shadow 500ms ease-out;
 }
 
 .header__form button:hover {
@@ -259,6 +261,10 @@ h2 {
 }
 
 @media (max-width: 64em) {
+    .header {
+        padding-block: .5rem;
+    }
+
     .header__nav {
         display: none;
     }

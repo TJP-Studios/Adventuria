@@ -123,6 +123,7 @@ h2 {
 }
 
 .btn {
+  transition: box-shadow 500ms ease-out;
   border: 0;
   outline: none;
   color: inherit;
@@ -194,6 +195,7 @@ h2 {
   border: 0;
   outline: none;
   background: transparent;
+  transition: box-shadow 500ms ease-out;
 }
 
 .header__form button:hover {
@@ -259,6 +261,10 @@ h2 {
 }
 
 @media (max-width: 64em) {
+  .header {
+    padding-block: .5rem;
+  }
+
   .header__nav {
     display: none;
   }
@@ -521,6 +527,10 @@ h2 {
   text-underline-offset: .25rem;
 }
 
+.buy-me-coffee a:hover {
+  text-decoration: none;
+}
+
 .buy-me-coffee img {
   margin-bottom: .45rem;
 }
@@ -608,6 +618,10 @@ h2 {
   box-shadow: none;
   border: 1px solid #3C3938;
   color: hsla(17, 100%, 58%, 1);
+}
+
+.trending-article__btn:hover {
+  box-shadow: none;
 }
 
 @media (max-width: 73rem) {
