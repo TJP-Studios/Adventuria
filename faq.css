@@ -314,11 +314,12 @@ h2 {
 
 
 .faqSection1 {
-  background-image: url(./images/Img.png);
+  background-image: url("./optimized-images/faq-hero-bg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 754px;
+  min-height: 100vh;
+  min-height: 100svh;
   margin-bottom: 4%;
 }
 
