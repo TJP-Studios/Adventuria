@@ -316,7 +316,7 @@ h2 {
   place-items: center;
   min-height: 100vh;
   min-height: 100svh;
-  background-image: url("./images/about-me-bg.svg");
+  background-image: url("./optimized-images/about-me-bg.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
