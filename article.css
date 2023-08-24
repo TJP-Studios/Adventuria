@@ -313,7 +313,7 @@ h2 {
 
 
 .articleSection1 {
-  background-image: url(./images/articlepyramid.png);
+  background-image: url("./optimized-images/article-hero-bg.webp");
   background-size: cover;
   height: 754px;
   margin-bottom: 5%;
