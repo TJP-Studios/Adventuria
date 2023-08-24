@@ -460,7 +460,7 @@ footer {
     place-content: center;
     min-height: 100svh;
     min-height: 100vh;
-    background-image: url(./images/africa-banner.png);
+    background-image: url("./optimized-images/africa-banner.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
