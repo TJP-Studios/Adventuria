@@ -38,6 +38,7 @@ button,
 textarea,
 select {
   font: inherit;
+  color: inherit;
 }
 
 html {
@@ -71,6 +72,16 @@ h1 {
   text-align: center;
   color: white;
   font-size: var(--fs-xlarge);
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+@media (max-width: 50em) {
+  h2 {
+    font-size: 2rem;
+  }
 }
 
 /* Utilities */
@@ -112,6 +123,7 @@ h1 {
 }
 
 .btn {
+  transition: box-shadow 500ms ease-out;
   border: 0;
   outline: none;
   color: inherit;
@@ -122,12 +134,15 @@ h1 {
   font-size: var(--fs-normal);
   border-radius: 1.25rem;
   padding: 1rem 2rem;
+}
+
+.btn:hover {
   box-shadow: 0px 13px 21px 0px rgba(255, 112, 53, 0.30);
 }
 
 /* Header */
 .header {
-  padding-block: .5rem;
+  padding-block: 1.25rem;
   text-transform: uppercase;
 }
 
@@ -163,20 +178,28 @@ h1 {
   align-items: center;
 }
 
+.header__form {
+  gap: .5rem;
+}
+
 .header__form input {
-  outline: none;
-  border: 1px solid #CCC9C7 ;
+  border: 1px solid #CCC9C7;
+  height: 56px;
   border-radius: .5rem;
   padding: 1.1rem 1rem;
 }
 
 .header__form button {
-  position: relative;
-  top: .85rem;
-  left: -0.85rem;
+  width: 56px;
+  height: 56px;
   border: 0;
   outline: none;
   background: transparent;
+  transition: box-shadow 500ms ease-out;
+}
+
+.header__form button:hover {
+  box-shadow: 0px 13px 21px 0px rgba(255, 112, 53, 0.30);
 }
 
 .mobile-nav {
@@ -232,12 +255,16 @@ h1 {
 }
 
 @media (max-width: 69em) {
-  .header__form img{
+  .header__form img {
     display: none;
   }
 }
 
 @media (max-width: 64em) {
+  .header {
+    padding-block: .5rem;
+  }
+
   .header__nav {
     display: none;
   }
@@ -393,7 +420,7 @@ h1 {
   background-image: url("./images/hero-north-america-bg.svg");
 }
 
-.hero__text > *:not(:last-child) {
+.hero__text>*:not(:last-child) {
   margin-bottom: 2rem;
 }
 
@@ -403,10 +430,10 @@ h1 {
   font-size: var(--fs-normal);
   border-radius: 1.25rem;
   padding: 1rem 2rem;
-  box-shadow: 0px 13px 21px 0px rgba(255, 112, 53, 0.30);
   color: white;
   background-color: hsla(17, 100%, 58%, 1);
 }
+
 
 @media (max-width: 50em) {
   .swiper-slide .container {
@@ -457,11 +484,15 @@ h1 {
   text-transform: uppercase;
   font-weight: 700;
   font-size: var(--fs-normal);
+  border: 1px solid #CCC9C7;
   border-radius: 1.25rem;
   padding: 1rem 2rem;
-  box-shadow: 0px 13px 21px 0px rgba(255, 112, 53, 0.30);
   color: hsla(17, 100%, 58%, 1);
   background-color: white;
+}
+
+.about__button:hover {
+  box-shadow: 0px 13px 21px 0px rgba(255, 112, 53, 0.30);
 }
 
 .traveler-boy,
@@ -502,7 +533,7 @@ h1 {
   .traveler-girl {
     bottom: .1rem;
   }
-  
+
   .traveler-boy,
   .traveler-girl {
     width: 10rem;
@@ -515,7 +546,7 @@ h1 {
   text-align: center;
 }
 
-.destinations .container > *:not(:last-child){
+.destinations .container>*:not(:last-child) {
   margin-bottom: 3rem;
 }
 
@@ -533,7 +564,6 @@ h1 {
   font-size: var(--fs-normal);
   border-radius: 1.25rem;
   padding: 1rem 2rem;
-  box-shadow: 0px 13px 21px 0px rgba(255, 112, 53, 0.30);
   color: white;
   background-color: hsla(17, 100%, 58%, 1);
 }
@@ -563,7 +593,7 @@ h1 {
   font-size: var(--fs-xlarge);
 }
 
-.resources__text > *:not(:last-child) {
+.resources__text>*:not(:last-child) {
   margin-bottom: 1.5rem;
 }
 
@@ -606,7 +636,7 @@ h1 {
   gap: 6rem;
 }
 
-.travel-tips__text > *:not(:last-child) {
+.travel-tips__text>*:not(:last-child) {
   padding-bottom: 2rem;
 }
 
@@ -696,14 +726,14 @@ h1 {
 
 .featured-article h3 {
   min-width: 9.375rem;
-  max-width: 32.75rem;   
+  max-width: 32.75rem;
 }
 
 .featured-article__text p {
   margin-top: .25rem;
 }
 
-.featured-article__text > *:not(:last-child) {
+.featured-article__text>*:not(:last-child) {
   margin-bottom: 1rem;
 }
 
@@ -882,7 +912,7 @@ footer {
 }
 
 @media (max-width: 25em) {
-  .footer__nav  li:nth-child(5) {
+  .footer__nav li:nth-child(5) {
     margin-inline: auto;
     width: 100%;
   }
