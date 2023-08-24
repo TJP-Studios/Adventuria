@@ -309,7 +309,7 @@ h2 {
 }
 
 main {
-  background-image: url("./images/404-bg.svg");
+  background-image: url("./optimized-images/404-bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

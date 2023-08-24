@@ -393,31 +393,31 @@ h2 {
 }
 
 .hero .africa {
-  background-image: url("./images/hero-africa-bg.svg");
+  background-image: url("./optimized-images/hero-africa-bg.webp");
 }
 
 .hero .europe {
-  background-image: url("./images/hero-europe-bg.svg");
+  background-image: url("./optimized-images/hero-europe-bg.webp");
 }
 
 .hero .asia {
-  background-image: url("./images/hero-asia-bg.svg");
+  background-image: url("./optimized-images/hero-asia-bg.webp");
 }
 
 .hero .antartica {
-  background-image: url("./images/hero-antartica-bg.svg");
+  background-image: url("./optimized-images/hero-antartica-bg.webp");
 }
 
 .hero .oceania {
-  background-image: url("./images/hero-oceania-bg.svg");
+  background-image: url("./optimized-images/hero-oceania-bg.webp");
 }
 
 .hero .south-america {
-  background-image: url("./images/hero-south-america-bg.svg");
+  background-image: url("./optimized-images/hero-south-america-bg.webp");
 }
 
 .hero .north-america {
-  background-image: url("./images/hero-north-america-bg.svg");
+  background-image: url("./optimized-images/hero-north-america-bg.webp");
 }
 
 .hero__text>*:not(:last-child) {
@@ -453,7 +453,7 @@ h2 {
 
 /* Shared BG */
 .shared-bg {
-  background-image: url("./images/shared-bg.svg");
+  background-image: url("./optimized-images/shared-bg.webp");
   background-repeat: no-repeat;
   /* background-position: center; */
   background-size: cover;
@@ -626,7 +626,7 @@ h2 {
   padding-block: 4rem 10rem;
   text-align: center;
   color: white;
-  background-image: url("./images/travel-tips-bg.svg");
+  background-image: url("./optimized-images/travel-tips-bg.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
