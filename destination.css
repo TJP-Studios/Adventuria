@@ -457,7 +457,7 @@ footer {
   place-items: center;
   min-height: 100svh;
   min-height: 100vh;
-  background-image: url(./images/top.png);
+  background-image: url("./optimized-images/destination-banner.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
